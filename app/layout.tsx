@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -11,6 +12,8 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+const gaMeasurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://samuelzeliska.sk"),
@@ -33,29 +36,31 @@ export const metadata: Metadata = {
     "SEO",
   ],
 
-  authors: [
-    {
-      name: "Samuel Zelíska",
-    },
-  ],
-
+  authors: [{ name: "Samuel Zelíska" }],
   creator: "Samuel Zelíska",
 
   openGraph: {
     title: "Samuel Zelíska | Web Developer",
-    description:
-      "Moderné webové stránky pre lokálne firmy.",
+    description: "Moderné webové stránky pre lokálne firmy.",
     url: "https://samuelzeliska.sk",
     siteName: "Samuel Zelíska",
     locale: "sk_SK",
     type: "website",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Samuel Zelíska Web Developer",
+      },
+    ],
   },
 
   twitter: {
     card: "summary_large_image",
     title: "Samuel Zelíska | Web Developer",
-    description:
-      "Moderné webové stránky pre lokálne firmy.",
+    description: "Moderné webové stránky pre lokálne firmy.",
+    images: ["/opengraph-image.png"],
   },
 
   robots: {
@@ -77,6 +82,8 @@ export default function RootLayout({
       <body className="min-h-full bg-white font-sans text-slate-950">
         {children}
       </body>
+
+      {gaMeasurementId ? <GoogleAnalytics gaId={gaMeasurementId} /> : null}
     </html>
   );
 }
