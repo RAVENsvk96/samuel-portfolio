@@ -3,16 +3,44 @@ import type { Project } from "@/types/project";
 export const projects: Project[] = [
   {
     title: "Autoservis",
-    category: "Lokálny biznis",
+    category: "Firemný web",
     year: "2026",
     description:
       "Moderný prezentačný web pre lokálny autoservis so zameraním na dôveryhodnosť, SEO a jednoduché objednanie.",
     goal:
-      "Zvýšiť dôveryhodnosť firmy a zjednodušiť zákazníkom kontaktovanie servisu.",
+      "Vytvoriť profesionálnu online prezentáciu, ktorá zvýši dôveryhodnosť firmy a uľahčí zákazníkom objednanie servisu.",
     result:
-      "Responzívny web s kontaktným formulárom, Google Maps, SEO základmi a čistou štruktúrou obsahu.",
+      "Responzívny web s kontaktným formulárom, Google Maps, SEO optimalizáciou a moderným používateľským rozhraním.",
     image: "/images/projects/autoservis.png",
-    technologies: ["Next.js", "React", "Tailwind CSS", "SEO"],
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Resend",
+      "SEO",
+    ],
     liveUrl: "https://autoservis-demo-beryl.vercel.app",
+  },
+  {
+    title: "Zubná ambulancia",
+    category: "Firemný web",
+    year: "2026",
+    description:
+      "Moderný prezentačný web pre zubnú ambulanciu zameraný na dôveru pacientov, profesionálnu prezentáciu služieb a jednoduché objednanie.",
+    goal:
+      "Vytvoriť moderný web, ktorý posilní dôveryhodnosť ambulancie a umožní pacientom jednoducho kontaktovať alebo objednať sa na vyšetrenie.",
+    result:
+      "Responzívny web s kontaktným formulárom, SEO optimalizáciou, moderným dizajnom a Lighthouse skóre 94 / 96 / 100 / 100.",
+    image: "/images/projects/dental.png",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Resend",
+      "SEO",
+    ],
+    liveUrl: "https://dental-demo-weld.vercel.app",
   },
 ];
