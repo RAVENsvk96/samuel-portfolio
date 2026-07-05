@@ -2,6 +2,26 @@ import type { Project } from "@/types/project";
 
 export const projects: Project[] = [
   {
+    title: "NORTH Barber Studio",
+    category: "Firemný web",
+    year: "2026",
+    description:
+      "Moderný prezentačný web pre prémiové barber štúdio zameraný na minimalistický dizajn, silnú vizuálnu identitu a kvalitný používateľský zážitok.",
+    goal:
+      "Vytvoriť modernú online prezentáciu, ktorá buduje dôveru, reprezentuje značku a motivuje návštevníkov k rezervácii termínu.",
+    result:
+      "Responzívny web s vlastným dizajnom, galériou, plynulými animáciami a SEO optimalizáciou pre maximálny vizuálny aj technický dojem.",
+    image: "/images/projects/north.png",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion",
+      "SEO",
+    ],
+    liveUrl: "https://north-barber-demo-two.vercel.app",
+  },
+  {
     title: "Autoservis",
     category: "Firemný web",
     year: "2026",
