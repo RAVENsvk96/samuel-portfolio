@@ -79,7 +79,7 @@ export default function RootLayout({
       lang="sk"
       className={`${geistSans.variable} ${geistMono.variable} h-full scroll-smooth antialiased`}
     >
-      <body className="min-h-full bg-white font-sans text-slate-950">
+      <body className="min-h-full bg-white font-sans text-slate-950 selection:bg-slate-950 selection:text-white">
         {children}
       </body>
 

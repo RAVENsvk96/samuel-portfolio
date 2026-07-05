@@ -13,17 +13,17 @@ export default function SectionHeading({
 }: SectionHeadingProps) {
   return (
     <div className={centered ? "text-center" : ""}>
-      <p className="text-sm font-semibold uppercase tracking-[0.25em] text-blue-600">
+      <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-600">
         {badge}
       </p>
 
-      <h2 className="mt-4 text-3xl font-bold tracking-tight text-slate-950 md:text-4xl">
+      <h2 className="mt-5 text-4xl font-bold tracking-tight text-slate-950 md:text-5xl">
         {title}
       </h2>
 
       {description ? (
         <p
-          className={`mt-4 text-slate-600 ${
+          className={`mt-6 text-lg leading-8 text-slate-600 ${
             centered ? "mx-auto max-w-2xl" : "max-w-2xl"
           }`}
         >

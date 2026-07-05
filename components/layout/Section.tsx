@@ -14,7 +14,7 @@ export default function Section({
   containerClassName = "",
 }: SectionProps) {
   return (
-    <section id={id} className={`py-20 ${className}`}>
+    <section id={id} className={`py-24 lg:py-28 ${className}`}>
       <Container className={containerClassName}>{children}</Container>
     </section>
   );
