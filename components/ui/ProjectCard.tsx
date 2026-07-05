@@ -72,13 +72,13 @@ export default function ProjectCard({
           </div>
         </div>
 
-        <div className="overflow-hidden rounded-[1.5rem] border border-slate-200 bg-slate-100 p-3">
+        <div className="aspect-[16/10] overflow-hidden rounded-[1.5rem] border border-slate-200 bg-slate-100 p-3">
           <Image
             src={project.image}
             alt={`Screenshot projektu ${project.title}`}
             width={900}
             height={650}
-            className="rounded-2xl object-cover transition-transform duration-500 hover:scale-[1.02]"
+            className="h-full w-full rounded-2xl object-cover transition-transform duration-500 hover:scale-[1.02]"
           />
         </div>
       </div>
