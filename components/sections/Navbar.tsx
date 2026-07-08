@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import Button from "@/components/ui/Button";
 import { navigation } from "@/data/navigation";
 
@@ -6,14 +7,14 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur">
       <nav className="mx-auto flex h-20 max-w-6xl items-center justify-between px-6">
-        <a href="#" aria-label="Domov">
+        <a href="#" aria-label="Domov" className="flex h-full items-center">
           <Image
             src="/images/branding/logo-nav.png"
             alt="Samuel Zelíska"
-            width={180}
-            height={48}
+            width={220}
+            height={70}
             priority
-            className="h-[96px] w-auto object-contain"
+            className="h-[56px] max-h-[56px] w-auto object-contain"
           />
         </a>
 

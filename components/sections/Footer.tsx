@@ -6,14 +6,14 @@ export default function Footer() {
     <footer className="border-t border-slate-200 bg-white">
       <div className="mx-auto flex max-w-6xl flex-col gap-8 px-6 py-10 md:flex-row md:items-center md:justify-between">
         <div className="flex flex-col items-center gap-3 md:items-start">
-          <a href="#" aria-label="Domov">
+          <a href="#" aria-label="Domov" className="flex items-center">
             <Image
               src="/images/branding/logo-nav.png"
               alt={profile.name}
-              width={180}
-            height={48}
-            priority
-            className="h-[96px] w-auto object-contain"
+              width={220}
+              height={70}
+              priority={false}
+              className="h-[56px] max-h-[56px] w-auto object-contain"
             />
           </a>
 
