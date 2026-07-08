@@ -4,7 +4,7 @@ import { profile } from "@/data/profile";
 
 export default function Contact() {
   return (
-    <Section id="kontakt" className="bg-slate-950">
+    <Section id="kontakt" className="bg-[#03193E]">
       <div className="mx-auto max-w-4xl text-center">
         <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-400">
           Kontakt

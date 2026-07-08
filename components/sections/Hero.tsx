@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import Button from "@/components/ui/Button";
 import { profile } from "@/data/profile";
 
@@ -9,6 +11,15 @@ export default function Hero() {
       <div className="absolute left-1/2 top-16 -z-10 h-96 w-96 -translate-x-1/2 rounded-full bg-blue-100/70 blur-[120px]" />
 
       <div className="mx-auto flex min-h-[85vh] max-w-5xl flex-col items-center justify-center px-6 py-32 text-center">
+        <Image
+          src="/images/branding/logo-hero.png"
+          alt={profile.name}
+          width={460}
+          height={150}
+          priority
+          className="mb-10 h-45 w-auto object-contain"
+        />
+
         <p className="text-sm font-semibold uppercase tracking-[0.35em] text-blue-600">
           {profile.role}
         </p>
