@@ -2,6 +2,26 @@ import type { Project } from "@/types/project";
 
 export const projects: Project[] = [
   {
+    title: "Bloom Beauty Studio",
+    category: "Firemný web",
+    year: "2026",
+    description:
+      "Elegantný prezentačný web pre beauty štúdio zameraný na jemnú vizuálnu identitu, profesionálnu prezentáciu služieb a jednoduchú rezerváciu termínu.",
+    goal:
+      "Vytvoriť modernú online prezentáciu, ktorá pôsobí pokojne, dôveryhodne a prémiovo a zároveň motivuje návštevníčky k rezervácii služby.",
+    result:
+      "Responzívny web s vlastným beauty variantom, galériou, recenziami, Google Maps, jemnými animáciami a SEO optimalizáciou.",
+    image: "/images/projects/bloom.png",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion",
+      "SEO",
+    ],
+    liveUrl: "https://bloom-beauty-demo-eta.vercel.app",
+  },
+  {
     title: "NORTH Barber Studio",
     category: "Firemný web",
     year: "2026",
