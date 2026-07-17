@@ -2,6 +2,27 @@ import type { Project } from "@/types/project";
 
 export const projects: Project[] = [
   {
+    title: "Konstrukt",
+    category: "Firemný web",
+    year: "2026",
+    description:
+      "Moderný prezentačný web pre stavebnú spoločnosť zameraný na dôveryhodnosť, kvalitnú prezentáciu realizácií a získavanie nových dopytov.",
+    goal:
+      "Vytvoriť profesionálnu online prezentáciu, ktorá buduje dôveru, predstavuje služby a motivuje návštevníkov k odoslaniu nezáväzného dopytu.",
+    result:
+      "Responzívny web s kontaktným formulárom, galériou realizácií, plynulými animáciami, štruktúrovanými dátami, SEO optimalizáciou a Lighthouse skóre 100 / 100 / 100 / 100.",
+    image: "/images/projects/konstrukt.png",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Resend",
+      "SEO",
+    ],
+    liveUrl: "https://konstrukt-demo.vercel.app",
+  },
+  {
     title: "Bloom Beauty Studio",
     category: "Firemný web",
     year: "2026",
@@ -71,7 +92,7 @@ export const projects: Project[] = [
     goal:
       "Vytvoriť moderný web, ktorý posilní dôveryhodnosť ambulancie a umožní pacientom jednoducho kontaktovať alebo objednať sa na vyšetrenie.",
     result:
-      "Responzívny web s kontaktným formulárom, SEO optimalizáciou, moderným dizajnom a Lighthouse skóre 94 / 96 / 100 / 100.",
+      "Responzívny web s kontaktným formulárom, SEO optimalizáciou, moderným dizajnom a dôrazom na vysoký výkon, prístupnosť a používateľský zážitok.",
     image: "/images/projects/dental.png",
     technologies: [
       "Next.js",
