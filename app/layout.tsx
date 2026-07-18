@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,41 +12,37 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const gaMeasurementId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+const siteUrl = "https://samuelzeliska.sk";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://samuelzeliska.sk"),
+  metadataBase: new URL(siteUrl),
 
   title: {
-    default: "Samuel Zelíska | Web Developer",
+    default: "Samuel Zelíska | Tvorba webových stránok",
     template: "%s | Samuel Zelíska",
   },
 
   description:
-    "Tvorím moderné webové stránky pre lokálne firmy. Rýchle, responzívne a profesionálne weby so zameraním na výkon, SEO a používateľský zážitok.",
+    "Tvorím rýchle a profesionálne webové stránky pre živnostníkov, lokálne firmy a menšie spoločnosti. Dôraz kladiem na dôveryhodnosť, použiteľnosť, výkon a technické SEO.",
 
-  keywords: [
-    "Web Developer",
-    "Next.js",
-    "React",
-    "Tvorba webových stránok",
-    "Frontend Developer",
-    "Slovensko",
-    "SEO",
+  authors: [
+    {
+      name: "Samuel Zelíska",
+      url: siteUrl,
+    },
   ],
-
-  authors: [{ name: "Samuel Zelíska" }],
   creator: "Samuel Zelíska",
   publisher: "Samuel Zelíska",
 
   alternates: {
-    canonical: "https://samuelzeliska.sk",
+    canonical: "/",
   },
 
   openGraph: {
-    title: "Samuel Zelíska | Web Developer",
-    description: "Moderné webové stránky pre lokálne firmy.",
-    url: "https://samuelzeliska.sk",
+    title: "Samuel Zelíska | Tvorba webových stránok",
+    description:
+      "Rýchle a profesionálne webové stránky pre živnostníkov, lokálne firmy a menšie spoločnosti.",
+    url: siteUrl,
     siteName: "Samuel Zelíska",
     locale: "sk_SK",
     type: "website",
@@ -56,16 +51,22 @@ export const metadata: Metadata = {
         url: "/images/branding/opengraph-image.png",
         width: 1200,
         height: 630,
-        alt: "Samuel Zelíska | Web Developer",
+        alt: "Samuel Zelíska – tvorba webových stránok",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Samuel Zelíska | Web Developer",
-    description: "Moderné webové stránky pre lokálne firmy.",
-    images: ["/images/branding/opengraph-image.png"],
+    title: "Samuel Zelíska | Tvorba webových stránok",
+    description:
+      "Rýchle a profesionálne webové stránky pre živnostníkov, lokálne firmy a menšie spoločnosti.",
+    images: [
+      {
+        url: "/images/branding/opengraph-image.png",
+        alt: "Samuel Zelíska – tvorba webových stránok",
+      },
+    ],
   },
 
   robots: {
@@ -83,6 +84,7 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   themeColor: "#ffffff",
+  colorScheme: "light",
 };
 
 export default function RootLayout({
@@ -98,8 +100,6 @@ export default function RootLayout({
       <body className="min-h-full bg-white font-sans text-slate-950 selection:bg-slate-950 selection:text-white">
         {children}
       </body>
-
-      {gaMeasurementId ? <GoogleAnalytics gaId={gaMeasurementId} /> : null}
     </html>
   );
 }

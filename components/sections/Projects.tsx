@@ -7,9 +7,9 @@ export default function Projects() {
   return (
     <Section id="projekty" className="bg-slate-50">
       <SectionHeading
-        badge="Vybrané práce"
-        title="Projekty, na ktorých som pracoval"
-        description="Ukážky webov vytvorených so zameraním na dôveru, prehľadnosť a praktický výsledok pre klienta."
+        badge="Ukážkové projekty"
+        title="Ako môže vyzerať váš nový web"
+        description="Tieto ukážkové projekty som vytvoril pre rôzne typy lokálnych firiem. Predstavujú môj prístup k dizajnu, použiteľnosti, výkonu a technickému spracovaniu webových stránok."
         centered
       />
 

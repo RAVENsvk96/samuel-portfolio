@@ -7,13 +7,13 @@ export default function Process() {
     <Section id="proces" className="bg-white">
       <SectionHeading
         badge="Proces"
-        title="Ako spolupracujem"
+        title="Ako prebieha spolupráca"
         description="Jednoduchý a prehľadný postup od prvého rozhovoru až po spustenie webu."
       />
 
-      <div className="mt-14 divide-y divide-slate-200">
+      <ol className="mt-14 divide-y divide-slate-200">
         {process.map((item) => (
-          <div
+          <li
             key={item.step}
             className="grid gap-4 py-8 md:grid-cols-[120px_1fr]"
           >
@@ -28,9 +28,9 @@ export default function Process() {
                 {item.description}
               </p>
             </div>
-          </div>
+          </li>
         ))}
-      </div>
+      </ol>
     </Section>
   );
 }

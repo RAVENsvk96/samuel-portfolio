@@ -2,21 +2,16 @@ export const services = [
   {
     title: "Firemné webové stránky",
     description:
-      "Moderné prezentačné weby pre živnostníkov, lokálne firmy a menšie spoločnosti.",
+      "Kompletné prezentačné weby pre živnostníkov, lokálne firmy a menšie spoločnosti. Jasne predstavia vaše služby, posilnia dôveryhodnosť firmy a uľahčia zákazníkom kontakt.",
   },
   {
     title: "Landing pages",
     description:
-      "Jednostránkové weby zamerané na konkrétnu službu alebo marketingovú kampaň.",
+      "Jednostránkové weby zamerané na jednu službu, ponuku alebo marketingovú kampaň. Obsah a štruktúra vedú návštevníka k jasnej akcii, napríklad ku kontaktu alebo objednávke.",
   },
   {
     title: "Redizajn existujúceho webu",
     description:
-      "Modernizácia zastaraných stránok s dôrazom na dizajn, výkon a použiteľnosť.",
-  },
-  {
-    title: "SEO a technická optimalizácia",
-    description:
-      "Základné SEO, rýchlosť načítania a technické nastavenie pre lepšiu viditeľnosť vo vyhľadávačoch.",
+      "Premena zastaraného alebo neprehľadného webu na modernejšie, rýchlejšie a jednoduchšie použiteľné riešenie bez zbytočného narušenia fungujúcich častí.",
   },
 ];
