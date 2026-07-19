@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/branding/opengraph-image.png",
+        url: "/images/branding/opengraph-banner.png",
         width: 1200,
         height: 630,
         alt: "Samuel Zelíska – tvorba webových stránok",
