@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl = "https://samuelzeliska.sk";
+const siteUrl = "https://www.samuelzeliska.sk";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
