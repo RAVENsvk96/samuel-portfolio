@@ -31,7 +31,7 @@ export default function FeaturedArticle({
           <div className="relative min-h-72 overflow-hidden bg-slate-100">
             <Image
               src={post.coverImage}
-              alt=""
+              alt={`Titulný obrázok článku ${post.title}`}
               fill
               className="object-cover"
               sizes="(min-width: 1024px) 50vw, 100vw"
