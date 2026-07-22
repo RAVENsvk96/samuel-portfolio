@@ -1,6 +1,8 @@
 import { getBlogPostBySlug, getBlogPostSlugs } from "@/lib/blog";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import Prose from "@/components/blog/Prose";
+import { MDXRemote } from "next-mdx-remote/rsc";
 
 type BlogPostPageProps = {
   params: Promise<{
@@ -70,9 +72,9 @@ export default async function BlogPostPage({
           </div>
         </header>
 
-        <div className="mt-12 whitespace-pre-wrap leading-8 text-slate-700">
-          {post.content}
-        </div>
+       <Prose>
+        <MDXRemote source={post.content} />
+       </Prose>
       </article>
     </main>
   );
