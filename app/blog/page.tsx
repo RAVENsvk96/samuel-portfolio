@@ -15,15 +15,26 @@ export const metadata: Metadata = {
 
 export default function BlogPage() {
   const featuredPost = getFeaturedBlogPost();
-  const posts = getAllBlogPosts();
+
+  const posts = getAllBlogPosts().filter(
+    (post) => post.slug !== featuredPost?.slug,
+  );
 
   return (
-    <main className="mx-auto max-w-6xl px-6 py-24">
+    <main className="mx-auto max-w-6xl px-6 py-16 sm:py-20 lg:py-24">
       <BlogHero />
 
-      {featuredPost && <FeaturedArticle post={featuredPost} />}
+      {featuredPost && (
+        <div className="mt-20 sm:mt-24">
+          <FeaturedArticle post={featuredPost} />
+        </div>
+      )}
 
-      <ArticlesGrid posts={posts} />
+      {posts.length > 0 && (
+        <div className="mt-24 sm:mt-28">
+          <ArticlesGrid posts={posts} />
+        </div>
+      )}
     </main>
   );
 }
