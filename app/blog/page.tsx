@@ -1,6 +1,10 @@
+import ArticlesGrid from "@/components/blog/ArticlesGrid";
 import BlogHero from "@/components/blog/BlogHero";
 import FeaturedArticle from "@/components/blog/FeaturedArticle";
-import { getFeaturedBlogPost } from "@/lib/blog";
+import {
+  getAllBlogPosts,
+  getFeaturedBlogPost,
+} from "@/lib/blog";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -11,12 +15,15 @@ export const metadata: Metadata = {
 
 export default function BlogPage() {
   const featuredPost = getFeaturedBlogPost();
+  const posts = getAllBlogPosts();
 
   return (
     <main className="mx-auto max-w-6xl px-6 py-24">
       <BlogHero />
 
       {featuredPost && <FeaturedArticle post={featuredPost} />}
+
+      <ArticlesGrid posts={posts} />
     </main>
   );
 }
