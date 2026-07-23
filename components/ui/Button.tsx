@@ -1,20 +1,28 @@
-import Link from "next/link";
-import type { ReactNode } from "react";
+import Link, { type LinkProps } from "next/link";
+import type {
+  AnchorHTMLAttributes,
+  ReactNode,
+} from "react";
 
-type ButtonProps = {
-  href: string;
-  children: ReactNode;
-  className?: string;
-};
+type ButtonProps = LinkProps &
+  Omit<
+    AnchorHTMLAttributes<HTMLAnchorElement>,
+    keyof LinkProps | "href"
+  > & {
+    children: ReactNode;
+    className?: string;
+  };
 
 export default function Button({
   href,
   children,
   className = "",
+  ...props
 }: ButtonProps) {
   return (
     <Link
       href={href}
+      {...props}
       className={`
         inline-flex items-center justify-center
         whitespace-nowrap rounded-xl
