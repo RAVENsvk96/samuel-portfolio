@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import Button from "@/components/ui/Button";
 import { navigation } from "@/data/navigation";
@@ -7,7 +8,7 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur">
       <nav className="mx-auto flex h-20 max-w-6xl items-center justify-between px-6">
-        <a href="#" aria-label="Domov" className="flex h-full items-center">
+        <Link href="/" aria-label="Domov" className="flex h-full items-center">
           <Image
             src="/images/branding/logo-nav.png"
             alt="Samuel Zelíska"
@@ -16,17 +17,17 @@ export default function Navbar() {
             priority
             className="h-[56px] max-h-[56px] w-auto object-contain"
           />
-        </a>
+        </Link>
 
         <div className="hidden items-center gap-8 text-sm text-slate-600 md:flex">
           {navigation.map((item) => (
-            <a
+            <Link
               key={item.label}
               href={item.href}
               className="transition hover:text-blue-600"
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </div>
 
