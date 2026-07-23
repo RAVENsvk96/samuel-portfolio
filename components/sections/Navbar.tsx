@@ -49,7 +49,7 @@ export default function Navbar({
               <>
                 <Link
                   href="/blog"
-                  className="font-medium text-slate-950 transition hover:text-blue-600"
+                  className="font-semibold text-slate-950 transition hover:text-blue-600"
                 >
                   Blog
                 </Link>
@@ -62,15 +62,21 @@ export default function Navbar({
                 </Link>
               </>
             ) : (
-              navigation.map((item) => (
-                <Link
-                  key={item.label}
-                  href={item.href}
-                  className="transition hover:text-blue-600"
-                >
-                  {item.label}
-                </Link>
-              ))
+              navigation
+                .filter((item) => item.label !== "Kontakt")
+                .map((item) => (
+                  <Link
+                    key={item.label}
+                    href={item.href}
+                    className={
+                      item.label === "Blog"
+                        ? "font-semibold text-slate-950 transition hover:text-blue-600"
+                        : "transition hover:text-blue-600"
+                    }
+                  >
+                    {item.label}
+                  </Link>
+                ))
             )}
           </div>
 
@@ -145,6 +151,14 @@ export default function Navbar({
                   >
                     Späť na portfólio
                   </Link>
+
+                  <Link
+                    href="/#kontakt"
+                    onClick={closeMenu}
+                    className="rounded-xl px-4 py-3.5 text-base font-medium text-slate-700 transition hover:bg-slate-100 hover:text-blue-600"
+                  >
+                    Kontakt
+                  </Link>
                 </>
               ) : (
                 navigation.map((item) => (
@@ -152,20 +166,16 @@ export default function Navbar({
                     key={item.label}
                     href={item.href}
                     onClick={closeMenu}
-                    className="rounded-xl px-4 py-3.5 text-base font-medium text-slate-700 transition hover:bg-slate-100 hover:text-blue-600"
+                    className={
+                      item.label === "Blog"
+                        ? "rounded-xl px-4 py-3.5 text-base font-semibold text-slate-950 transition hover:bg-slate-100 hover:text-blue-600"
+                        : "rounded-xl px-4 py-3.5 text-base font-medium text-slate-700 transition hover:bg-slate-100 hover:text-blue-600"
+                    }
                   >
                     {item.label}
                   </Link>
                 ))
               )}
-
-              <Button
-                href={isBlog ? "/#kontakt" : "#kontakt"}
-                className="mt-4 w-full justify-center"
-                onClick={closeMenu}
-              >
-                Kontakt
-              </Button>
             </div>
           </div>
         )}
