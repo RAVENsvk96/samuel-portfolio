@@ -1,6 +1,7 @@
 import ArticlesGrid from "@/components/blog/ArticlesGrid";
 import BlogHero from "@/components/blog/BlogHero";
 import FeaturedArticle from "@/components/blog/FeaturedArticle";
+import Navbar from "@/components/sections/Navbar";
 import {
   getAllBlogPosts,
   getFeaturedBlogPost,
@@ -21,20 +22,24 @@ export default function BlogPage() {
   );
 
   return (
-    <main className="mx-auto max-w-6xl px-6 py-16 sm:py-20 lg:py-24">
-      <BlogHero />
+    <>
+      <Navbar variant="blog" />
 
-      {featuredPost && (
-        <div className="mt-20 sm:mt-24">
-          <FeaturedArticle post={featuredPost} />
-        </div>
-      )}
+      <main className="mx-auto max-w-6xl px-6 py-16 sm:py-20 lg:py-24">
+        <BlogHero />
 
-      {posts.length > 0 && (
-        <div className="mt-24 sm:mt-28">
-          <ArticlesGrid posts={posts} />
-        </div>
-      )}
-    </main>
+        {featuredPost && (
+          <div className="mt-20 sm:mt-24">
+            <FeaturedArticle post={featuredPost} />
+          </div>
+        )}
+
+        {posts.length > 0 && (
+          <div className="mt-24 sm:mt-28">
+            <ArticlesGrid posts={posts} />
+          </div>
+        )}
+      </main>
+    </>
   );
 }
