@@ -48,9 +48,9 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/images/branding/opengraph-banner-v2.png",
-        width: 1200,
-        height: 630,
+        url: "/images/branding/opengraph-banner-v3.png",
+        width: 1280,
+        height: 640,
         alt: "Samuel Zelíska – tvorba webových stránok",
       },
     ],
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
       "Rýchle a profesionálne webové stránky pre živnostníkov, lokálne firmy a menšie spoločnosti.",
     images: [
       {
-        url: "/images/branding/opengraph-banner-v2.png",
+        url: "/images/branding/opengraph-banner-v3.png",
         alt: "Samuel Zelíska – tvorba webových stránok",
       },
     ],
