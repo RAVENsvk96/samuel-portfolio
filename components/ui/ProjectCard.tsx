@@ -12,51 +12,80 @@ export default function ProjectCard({
   project,
   index,
 }: ProjectCardProps) {
-  return (
-    <article className="group rounded-[2rem] border border-slate-200 bg-white/85 p-8 shadow-sm backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-slate-300 hover:shadow-xl md:p-10">
-      <div
-        className={`flex flex-col gap-10 lg:grid lg:grid-cols-[0.9fr_1.1fr] lg:items-center ${
-          index % 2 === 1 ? "lg:[&>*:first-child]:order-2" : ""
-        }`}
-      >
-        <div>
-          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">
-            Ukážkový projekt · {project.category}
-          </p>
+  const imageOrder =
+    index % 2 === 1
+      ? "lg:order-2"
+      : "lg:order-1";
 
-          <h3 className="mt-4 text-3xl font-bold tracking-tight text-slate-950 md:text-4xl">
+  const contentOrder =
+    index % 2 === 1
+      ? "lg:order-1"
+      : "lg:order-2";
+
+  return (
+    <article className="group overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/[0.045] shadow-[0_24px_80px_rgba(0,0,0,0.16)] transition-all duration-300 hover:border-blue-400/30 hover:bg-white/[0.06] lg:rounded-[2rem]">
+      <div className="grid lg:grid-cols-[1.06fr_0.94fr] lg:items-stretch">
+        <div
+          className={`p-4 pb-0 sm:p-6 sm:pb-0 lg:p-7 ${imageOrder}`}
+        >
+          <div className="aspect-[16/10] overflow-hidden rounded-[1.25rem] border border-white/10 bg-[#03193E] shadow-2xl shadow-black/20">
+            <Image
+              src={project.image}
+              alt={`Ukážka demo projektu ${project.title}`}
+              width={900}
+              height={650}
+              sizes="(min-width: 1024px) 52vw, 100vw"
+              className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.025]"
+            />
+          </div>
+        </div>
+
+        <div
+          className={`flex flex-col justify-center p-6 sm:p-8 lg:p-10 xl:p-12 ${contentOrder}`}
+        >
+          <div className="flex flex-wrap items-center gap-3">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-blue-400 sm:text-sm">
+              Demo projekt · {project.category}
+            </p>
+
+            <span className="rounded-full border border-white/10 bg-white/5 px-2.5 py-1 text-xs font-medium text-slate-400">
+              {project.year}
+            </span>
+          </div>
+
+          <h3 className="mt-4 text-3xl font-bold tracking-tight text-white md:text-4xl">
             {project.title}
           </h3>
 
-          <p className="mt-5 text-lg leading-8 text-slate-600">
+          <p className="mt-5 text-base leading-7 text-slate-300 sm:text-lg sm:leading-8">
             {project.description}
           </p>
 
-          <div className="mt-8 grid gap-6 md:grid-cols-2">
+          <div className="mt-7 grid gap-5 border-t border-white/10 pt-7 sm:grid-cols-2">
             <div>
-              <p className="text-sm font-semibold text-slate-950">Cieľ</p>
+              <p className="text-sm font-semibold text-white">Cieľ</p>
 
-              <p className="mt-2 text-sm leading-6 text-slate-600">
+              <p className="mt-2 text-sm leading-6 text-slate-400">
                 {project.goal}
               </p>
             </div>
 
             <div>
-              <p className="text-sm font-semibold text-slate-950">
+              <p className="text-sm font-semibold text-white">
                 Riešenie
               </p>
 
-              <p className="mt-2 text-sm leading-6 text-slate-600">
+              <p className="mt-2 text-sm leading-6 text-slate-400">
                 {project.result}
               </p>
             </div>
           </div>
 
-          <div className="mt-8 flex flex-wrap gap-2">
+          <div className="mt-7 flex flex-wrap gap-2">
             {project.technologies.map((technology) => (
               <span
                 key={technology}
-                className="rounded-full border border-slate-200 bg-white px-3 py-1 text-sm text-slate-600 transition-colors duration-300 group-hover:border-slate-300"
+                className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium text-slate-300 transition-colors duration-300 group-hover:border-white/20 sm:text-sm"
               >
                 {technology}
               </span>
@@ -64,21 +93,15 @@ export default function ProjectCard({
           </div>
 
           <div className="mt-8">
-            <Button href={project.liveUrl}>
-              Pozrieť ukážku
+            <Button
+              href={project.liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Pozrieť demo projekt ${project.title} v novom okne`}
+            >
+              Pozrieť demo
             </Button>
           </div>
-        </div>
-
-        <div className="aspect-[16/10] overflow-hidden rounded-[1.5rem] border border-slate-200 bg-slate-100 p-3 transition-colors duration-300 group-hover:border-slate-300">
-          <Image
-            src={project.image}
-            alt={`Ukážka projektu ${project.title}`}
-            width={900}
-            height={650}
-            sizes="(min-width: 1024px) 50vw, 100vw"
-            className="h-full w-full rounded-2xl object-cover transition-transform duration-700 group-hover:scale-[1.035]"
-          />
         </div>
       </div>
     </article>
