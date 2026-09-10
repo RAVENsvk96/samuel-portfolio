@@ -19,7 +19,7 @@ export default function Hero() {
       <div className="absolute left-1/2 top-1/2 -z-10 size-[25rem] -translate-x-1/2 -translate-y-1/2 rounded-full border border-blue-400/10 sm:size-[34rem]" />
       <div className="absolute left-1/2 top-1/3 -z-10 size-72 -translate-x-1/2 rounded-full bg-blue-500/15 blur-[110px] sm:size-96" />
 
-      <div className="mx-auto flex min-h-[calc(100svh-5rem)] max-w-5xl flex-col items-center justify-center px-6 py-12 text-center sm:py-16 lg:py-20">
+      <div className="mx-auto flex max-w-5xl flex-col items-center justify-center px-6 py-12 text-center sm:py-16 lg:min-h-[calc(100svh-5rem)] lg:py-20">
         <div className="relative mb-7 hidden size-40 sm:block lg:size-44">
           <Image
             src="/images/branding/logo-sz.png"
