@@ -22,41 +22,41 @@ export default function Navbar({
   };
 
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-white/10 bg-[#03193E]/95 backdrop-blur-xl">
       <nav
-        className="mx-auto max-w-6xl px-6"
+        className="mx-auto max-w-6xl px-5 sm:px-6"
         aria-label="Hlavná navigácia"
       >
         <div className="flex h-20 items-center justify-between">
           <Link
             href="/"
             aria-label="Späť na domovskú stránku"
-            className="flex h-full items-center"
+            className="flex h-full items-center rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-4 focus-visible:ring-offset-[#03193E]"
             onClick={closeMenu}
           >
             <Image
-              src="/images/branding/logo-nav.png"
+              src="/images/branding/logo-horizontal.svg"
               alt="Samuel Zelíska"
-              width={220}
-              height={70}
+              width={360}
+              height={100}
               priority
-              className="h-[56px] max-h-[56px] w-auto object-contain"
+              className="h-11 w-auto object-contain sm:h-12"
             />
           </Link>
 
-          <div className="hidden items-center gap-8 text-sm text-slate-600 md:flex">
+          <div className="hidden items-center gap-8 text-sm text-slate-300 md:flex">
             {isBlog ? (
               <>
                 <Link
                   href="/blog"
-                  className="font-semibold text-slate-950 transition hover:text-blue-600"
+                  className="font-semibold text-white transition hover:text-blue-400"
                 >
                   Blog
                 </Link>
 
                 <Link
                   href="/"
-                  className="transition hover:text-blue-600"
+                  className="transition hover:text-blue-400"
                 >
                   Späť na portfólio
                 </Link>
@@ -70,8 +70,8 @@ export default function Navbar({
                     href={item.href}
                     className={
                       item.label === "Blog"
-                        ? "font-semibold text-slate-950 transition hover:text-blue-600"
-                        : "transition hover:text-blue-600"
+                        ? "font-semibold text-white transition hover:text-blue-400"
+                        : "transition hover:text-blue-400"
                     }
                   >
                     {item.label}
@@ -91,7 +91,7 @@ export default function Navbar({
 
           <button
             type="button"
-            className="inline-flex size-12 items-center justify-center rounded-xl border border-slate-200 text-slate-950 transition hover:border-blue-200 hover:bg-blue-50 hover:text-blue-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-2 md:hidden"
+            className="inline-flex size-12 items-center justify-center rounded-xl border border-white/15 text-white transition hover:border-blue-400/60 hover:bg-white/10 hover:text-blue-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#03193E] md:hidden"
             aria-label={isMenuOpen ? "Zavrieť navigáciu" : "Otvoriť navigáciu"}
             aria-expanded={isMenuOpen}
             aria-controls="mobile-navigation"
@@ -131,7 +131,7 @@ export default function Navbar({
         {isMenuOpen && (
           <div
             id="mobile-navigation"
-            className="border-t border-slate-200 pb-6 pt-4 md:hidden"
+            className="border-t border-white/10 pb-6 pt-4 md:hidden"
           >
             <div className="flex flex-col">
               {isBlog ? (
@@ -139,7 +139,7 @@ export default function Navbar({
                   <Link
                     href="/blog"
                     onClick={closeMenu}
-                    className="rounded-xl px-4 py-3.5 text-base font-semibold text-slate-950 transition hover:bg-slate-100 hover:text-blue-600"
+                    className="rounded-xl px-4 py-3.5 text-base font-semibold text-white transition hover:bg-white/10 hover:text-blue-300"
                   >
                     Blog
                   </Link>
@@ -147,7 +147,7 @@ export default function Navbar({
                   <Link
                     href="/"
                     onClick={closeMenu}
-                    className="rounded-xl px-4 py-3.5 text-base font-medium text-slate-700 transition hover:bg-slate-100 hover:text-blue-600"
+                    className="rounded-xl px-4 py-3.5 text-base font-medium text-slate-300 transition hover:bg-white/10 hover:text-blue-300"
                   >
                     Späť na portfólio
                   </Link>
@@ -155,7 +155,7 @@ export default function Navbar({
                   <Link
                     href="/#kontakt"
                     onClick={closeMenu}
-                    className="rounded-xl px-4 py-3.5 text-base font-medium text-slate-700 transition hover:bg-slate-100 hover:text-blue-600"
+                    className="rounded-xl px-4 py-3.5 text-base font-medium text-slate-300 transition hover:bg-white/10 hover:text-blue-300"
                   >
                     Kontakt
                   </Link>
@@ -168,8 +168,8 @@ export default function Navbar({
                     onClick={closeMenu}
                     className={
                       item.label === "Blog"
-                        ? "rounded-xl px-4 py-3.5 text-base font-semibold text-slate-950 transition hover:bg-slate-100 hover:text-blue-600"
-                        : "rounded-xl px-4 py-3.5 text-base font-medium text-slate-700 transition hover:bg-slate-100 hover:text-blue-600"
+                        ? "rounded-xl px-4 py-3.5 text-base font-semibold text-white transition hover:bg-white/10 hover:text-blue-300"
+                        : "rounded-xl px-4 py-3.5 text-base font-medium text-slate-300 transition hover:bg-white/10 hover:text-blue-300"
                     }
                   >
                     {item.label}

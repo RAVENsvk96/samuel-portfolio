@@ -6,24 +6,24 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-slate-200 bg-white">
+    <footer className="border-t border-white/10 bg-[#03193E] text-white">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-8 px-6 py-10 text-center md:flex-row md:justify-between md:text-left">
         <div className="flex flex-col items-center gap-3 md:items-start">
           <a
             href="#"
             aria-label="Prejsť na začiatok stránky"
-            className="flex items-center rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-4"
+            className="flex items-center rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-4 focus-visible:ring-offset-[#03193E]"
           >
             <Image
-              src="/images/branding/logo-nav.png"
+              src="/images/branding/logo-horizontal.svg"
               alt={profile.name}
-              width={220}
-              height={70}
-              className="h-[56px] max-h-[56px] w-auto object-contain"
+              width={360}
+              height={100}
+              className="h-12 w-auto object-contain"
             />
           </a>
 
-          <p className="text-sm text-slate-500">
+          <p className="text-sm text-slate-400">
             © {currentYear} {profile.name}. Všetky práva vyhradené.
           </p>
         </div>
@@ -36,7 +36,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub profil, otvorí sa v novom okne"
-                className="rounded-sm text-slate-500 transition-colors hover:text-blue-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-4"
+                className="rounded-sm text-slate-400 transition-colors hover:text-blue-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-4 focus-visible:ring-offset-[#03193E]"
               >
                 GitHub
               </a>
@@ -45,7 +45,7 @@ export default function Footer() {
             <li>
               <a
                 href={`mailto:${profile.email}`}
-                className="rounded-sm text-slate-500 transition-colors hover:text-blue-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-600 focus-visible:ring-offset-4"
+                className="rounded-sm text-slate-400 transition-colors hover:text-blue-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-4 focus-visible:ring-offset-[#03193E]"
               >
                 Email
               </a>
