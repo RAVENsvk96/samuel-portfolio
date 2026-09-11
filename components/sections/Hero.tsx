@@ -20,7 +20,7 @@ export default function Hero() {
       <div className="absolute left-1/2 top-1/3 -z-10 size-72 -translate-x-1/2 rounded-full bg-blue-500/15 blur-[110px] sm:size-96" />
 
       <div className="mx-auto flex max-w-5xl flex-col items-center justify-center px-6 py-12 text-center sm:py-16 lg:min-h-[calc(100svh-5rem)] lg:py-20">
-        <div className="relative mb-7 hidden size-40 sm:block lg:size-44">
+        <div className="relative -mb-3 size-24 sm:-mb-5 sm:size-36 lg:-mb-6 lg:size-44">
           <Image
             src="/images/branding/logo-sz.png"
             alt="Monogram Samuel Zelíska"
