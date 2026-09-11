@@ -22,8 +22,8 @@ export default function ArticlesGrid({ posts }: ArticlesGridProps) {
         </h2>
 
         <p className="mt-4 max-w-2xl leading-7 text-slate-300">
-          Praktické články o vývoji webov, SEO, výkone a budovaní Starter Kit
-          Pro.
+          Praktické články pre podnikateľov a firmy o tvorbe webu, cenách,
+          redizajne, SEO a technickom spracovaní.
         </p>
       </div>
 

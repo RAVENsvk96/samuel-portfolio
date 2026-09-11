@@ -1,4 +1,4 @@
-const topics = ["Starter Kit Pro", "SEO", "Výkon", "Case studies"];
+const topics = ["Firemné weby", "Cena webu", "Redizajn", "SEO"];
 
 export default function BlogHero() {
   return (
@@ -13,12 +13,13 @@ export default function BlogHero() {
         </p>
 
         <h1 className="mt-6 text-[2rem] font-extrabold leading-[1.08] tracking-tight text-white sm:text-5xl sm:leading-tight lg:text-6xl">
-          Praktické poznatky z vývoja moderných webových stránok.
+          Praktické rady pre lepší firemný web.
         </h1>
 
         <p className="mx-auto mt-7 max-w-2xl text-base leading-7 text-slate-300 sm:text-lg sm:leading-8 lg:text-xl">
-          Dokumentujem vývoj Starter Kit Pro a zdieľam skúsenosti so SEO,
-          výkonom, architektúrou a tvorbou kvalitných firemných webov.
+          Zrozumiteľné články o tvorbe webových stránok, cenách,
+          redizajne, SEO a rozhodnutiach, ktoré ovplyvňujú kvalitu
+          firemného webu.
         </p>
 
         <div className="mt-9 flex flex-wrap justify-center gap-3">

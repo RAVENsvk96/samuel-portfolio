@@ -13,7 +13,7 @@ import {
 export const metadata: Metadata = {
   title: "Blog | Samuel Zelíska",
   description:
-    "Praktické články o vývoji moderných webových stránok, SEO, výkone a skúsenostiach z reálnych projektov.",
+    "Praktické články pre podnikateľov a firmy o tvorbe webových stránok, cenách, redizajne, SEO, výkone a použiteľnosti.",
 };
 
 export default function BlogPage() {
