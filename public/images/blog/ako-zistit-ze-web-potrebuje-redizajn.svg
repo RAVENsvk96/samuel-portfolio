@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
+  <title id="title">Ako zistíte, že váš web potrebuje redizajn</title>
+  <desc id="desc">Titulná grafika článku v modrom vizuálnom štýle značky Samuel Zelíska.</desc>
+  <rect width="1280" height="640" fill="#03193E"/>
+  <defs>
+    <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M64 0H0V64" fill="none" stroke="#60A5FA" stroke-opacity=".08"/>
+    </pattern>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#93C5FD"/>
+      <stop offset="1" stop-color="#2563EB"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="640" fill="url(#grid)"/>
+  <circle cx="1010" cy="320" r="244" fill="none" stroke="#60A5FA" stroke-opacity=".13"/>
+  <circle cx="1010" cy="320" r="174" fill="none" stroke="#60A5FA" stroke-opacity=".13"/>
+  <text x="176" y="120" fill="#60A5FA" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="7">REDIZAJN • FIREMNÝ WEB</text>
+  <text x="176" y="220" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="56" font-weight="800">
+    <tspan x="176" dy="0">Potrebuje váš web</tspan>
+    <tspan x="176" dy="70">nový začiatok?</tspan>
+  </text>
+  <text x="176" y="430" fill="#CBD5E1" font-family="Arial, sans-serif" font-size="27">8 signálov, ktoré sa neoplatí ignorovať</text>
+  <g transform="translate(878 236)" fill="none" stroke="url(#accent)" stroke-width="17" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M42 16a96 96 0 1 1-28 68"/>
+    <path d="M12 18h58v58"/>
+    <path d="M70 18 20 68"/>
+  </g>
+</svg>
