@@ -1,12 +1,11 @@
 export const profile = {
   name: "Samuel Zelíska",
-  role: "Tvorba webových stránok",
+  role: "Web dizajn a vývoj",
 
-  headline:
-    "Webové stránky, ktoré pomáhajú lokálnym firmám získavať zákazníkov.",
+  headline: "Tvorba webových stránok pre podnikateľov a firmy",
 
   description:
-    "Navrhujem a vytváram moderné, rýchle a prehľadné weby, ktoré budujú dôveru a uľahčujú zákazníkom kontakt s vašou firmou.",
+    "Navrhujem a vyvíjam moderné webové stránky od prvého návrhu až po spustenie. S dôrazom na čistý dizajn, rýchlosť, dôveryhodnosť a jednoduchý kontakt so zákazníkmi.",
 
   email: "s.zeliska96@gmail.com",
   github: "https://github.com/RAVENsvk96",

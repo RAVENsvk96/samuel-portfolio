@@ -10,14 +10,13 @@ export const projects: Project[] = [
     goal:
       "Navrhnúť prehľadnú online prezentáciu, ktorá návštevníkovi rýchlo predstaví skúsenosti firmy a nasmeruje ho k nezáväznému dopytu.",
     result:
-      "Responzívny web s galériou realizácií, štruktúrou služieb, kontaktným formulárom, technickým SEO, štruktúrovanými dátami a optimalizovaným výkonom.",
+      "Responzívny web s galériou realizácií, štruktúrou služieb, prehľadom realizácií a služieb, jasnými výzvami k akcii, responzívnym zobrazením a optimalizovaným výkonom.",
     image: "/images/projects/konstrukt.png",
     technologies: [
       "Next.js",
       "TypeScript",
       "Tailwind CSS",
       "Framer Motion",
-      "Resend",
       "SEO",
     ],
     liveUrl: "https://konstrukt-demo.vercel.app",
@@ -31,7 +30,7 @@ export const projects: Project[] = [
     goal:
       "Vytvoriť pokojne a prémiovo pôsobiaci web, ktorý návštevníčke uľahčí výber služby a rezerváciu termínu.",
     result:
-      "Responzívne riešenie s prezentáciou služieb, galériou, recenziami, mapou prevádzky, jemnými animáciami a technickým SEO.",
+      "Responzívne riešenie s prezentáciou služieb, prezentáciou služieb, galériou, jemnými animáciami, responzívnym zobrazením a dôrazom na použiteľnosť.",
     image: "/images/projects/bloom.png",
     technologies: [
       "Next.js",
@@ -51,7 +50,7 @@ export const projects: Project[] = [
     goal:
       "Navrhnúť web, ktorý jasne komunikuje charakter značky, predstaví služby a nasmeruje návštevníka k rezervácii.",
     result:
-      "Responzívny web s vlastným vizuálnym smerovaním, galériou, prehľadom služieb, rezervačnými výzvami a optimalizáciou výkonu.",
+      "Responzívny web s vlastným vizuálnym smerovaním, výraznou vizuálnou identitou, galériou, prehľadom služieb, responzívnym zobrazením a optimalizáciou výkonu.",
     image: "/images/projects/north.png",
     technologies: [
       "Next.js",
@@ -71,14 +70,13 @@ export const projects: Project[] = [
     goal:
       "Vytvoriť prehľadnú online prezentáciu, v ktorej zákazník rýchlo nájde služby, kontaktné údaje a možnosti objednania.",
     result:
-      "Responzívny web s prehľadom služieb, kontaktným formulárom, mapou prevádzky, technickým SEO a optimalizovaným načítaním.",
+      "Responzívny web s prehľadom služieb, prehľadom služieb, jasnou navigáciou, responzívnym zobrazením a optimalizovaným načítaním.",
     image: "/images/projects/autoservis.png",
     technologies: [
       "Next.js",
       "TypeScript",
       "Tailwind CSS",
       "Framer Motion",
-      "Resend",
       "SEO",
     ],
     liveUrl: "https://autoservis-demo-beryl.vercel.app",
@@ -92,14 +90,13 @@ export const projects: Project[] = [
     goal:
       "Navrhnúť web, ktorý pacientovi zrozumiteľne predstaví služby ambulancie a uľahčí mu kontakt alebo objednanie.",
     result:
-      "Responzívne riešenie s prezentáciou služieb, kontaktným formulárom, technickým SEO a dôrazom na výkon, prístupnosť a použiteľnosť.",
+      "Responzívne riešenie s pokojnou prezentáciou služieb, responzívnym zobrazením a dôrazom na výkon, prístupnosť a použiteľnosť.",
     image: "/images/projects/dental.png",
     technologies: [
       "Next.js",
       "TypeScript",
       "Tailwind CSS",
       "Framer Motion",
-      "Resend",
       "SEO",
     ],
     liveUrl: "https://dental-demo-weld.vercel.app",

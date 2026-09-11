@@ -14,7 +14,7 @@ export default function Process() {
         <SectionHeading
           badge="Proces"
           title="Ako prebieha spolupráca"
-          description="Jednoduchý a prehľadný postup od prvého rozhovoru až po spustenie webu."
+          description="Od prvého rozhovoru až po spustenie budete vedieť, čo práve riešime a čo bude nasledovať."
           tone="dark"
         />
 

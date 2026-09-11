@@ -15,7 +15,7 @@ export default function Projects() {
         <SectionHeading
           badge="Ukážkové projekty"
           title="Ako môže vyzerať váš nový web"
-          description="Samostatne vytvorené demo koncepty pre rôzne typy lokálnych firiem. Nie sú to klientské realizácie – ukazujú môj prístup k dizajnu, použiteľnosti, výkonu a technickému spracovaniu."
+          description="Autorské demo koncepty vytvorené pre rôzne typy podnikania. Nie sú to klientské realizácie – ukazujú môj prístup k štruktúre, dizajnu, použiteľnosti a technickému spracovaniu webu."
           centered
           tone="dark"
         />

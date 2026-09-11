@@ -1,26 +1,26 @@
 export const process = [
   {
     step: "01",
-    title: "Konzultácia",
+    title: "Úvodná konzultácia",
     description:
-      "Najprv si prejdeme vaše potreby, ciele webu a zákazníkov, ktorým má stránka slúžiť. Vďaka tomu bude ďalší postup vychádzať z reálnych potrieb vašej firmy.",
+      "Prejdeme si vaše potreby, ciele a ľudí, ktorých má web osloviť. Na základe toho určím rozsah projektu a odporučím riešenie, ktoré dáva zmysel pre vaše podnikanie.",
   },
   {
     step: "02",
-    title: "Návrh riešenia",
+    title: "Návrh webu",
     description:
-      "Navrhnem štruktúru, obsah a vizuálny smer tak, aby bol web prehľadný, dôveryhodný a viedol návštevníkov k dôležitým informáciám alebo kontaktu.",
+      "Pripravím štruktúru, obsahové smerovanie a vizuálny návrh. Ešte pred vývojom tak budete vedieť, ako bude web pôsobiť a ako prevedie návštevníka k dôležitým informáciám.",
   },
   {
     step: "03",
-    title: "Vývoj webu",
+    title: "Vývoj a testovanie",
     description:
-      "Web vytvorím na vlastnom overenom základe projektu, ktorý mi umožňuje venovať viac času potrebám vašej firmy namiesto opakovania rovnakých technických úloh. Výsledkom je rýchly, responzívny a spoľahlivý web s dôrazom na SEO a použiteľnosť.",
+      "Schválený návrh premením na rýchly a responzívny web. Priebežne kontrolujem zobrazenie na rôznych zariadeniach, použiteľnosť, výkon a technické SEO.",
   },
   {
     step: "04",
-    title: "Kontrola a spustenie",
+    title: "Spustenie webu",
     description:
-      "Pred spustením skontrolujem obsah, responzivitu, formuláre, výkon a základné SEO nastavenia. Následne web nasadím do ostrej prevádzky a overím jeho správne fungovanie.",
+      "Po finálnej kontrole web nasadím do ostrej prevádzky, nastavím potrebné technické základy a overím jeho správne fungovanie.",
   },
 ];

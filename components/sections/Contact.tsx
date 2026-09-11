@@ -11,12 +11,12 @@ export default function Contact() {
         </p>
 
         <h2 className="mt-6 text-4xl font-bold tracking-tight text-white sm:text-6xl">
-          Máte projekt alebo nápad na nový web?
+          Potrebujete nový web alebo redizajn?
         </h2>
 
         <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-          Napíšte mi stručne, čo potrebujete. Spoločne prejdeme vaše ciele,
-          možnosti riešenia a ďalší postup bez zbytočne komplikovaného procesu.
+          Napíšte mi stručne o svojej firme a o tom, čo má nový web vyriešiť.
+          Ozvem sa vám a nezáväzne prejdeme najvhodnejší ďalší postup.
         </p>
 
         <div className="mt-10 flex flex-col items-center justify-center gap-5">

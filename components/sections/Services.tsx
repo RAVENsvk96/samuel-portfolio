@@ -13,8 +13,8 @@ export default function Services() {
       <div className="relative">
         <SectionHeading
           badge="Čo vytváram"
-          title="Webové riešenia pre lokálne firmy"
-          description="Každý projekt prispôsobujem cieľom firmy a potrebám jej zákazníkov. Výsledkom je prehľadný a dôveryhodný web, ktorý podporuje kontakt, objednávky alebo prezentáciu služieb."
+          title="Webové stránky navrhnuté pre vaše podnikanie"
+          description="Každý projekt prispôsobujem vašim cieľom, ponuke a zákazníkom. Výsledkom je prehľadný web, ktorý profesionálne predstaví firmu a uľahčí návštevníkom ďalší krok."
           tone="dark"
         />
 
@@ -44,7 +44,7 @@ export default function Services() {
 
         <p className="mt-8 max-w-3xl text-sm leading-6 text-slate-400">
           Každé riešenie zahŕňa responzívne zobrazenie, optimalizáciu výkonu,
-          základné technické SEO, funkčný kontaktný formulár a nasadenie webu do
+          základné technické SEO, prípravu na meranie návštevnosti a nasadenie webu do
           ostrej prevádzky.
         </p>
       </div>

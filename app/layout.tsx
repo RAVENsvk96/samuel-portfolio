@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Tvorím rýchle a profesionálne webové stránky pre živnostníkov, lokálne firmy a menšie spoločnosti. Dôraz kladiem na dôveryhodnosť, použiteľnosť, výkon a technické SEO.",
+    "Tvorba moderných webových stránok pre podnikateľov a firmy. Od návrhu až po spustenie s dôrazom na čistý dizajn, výkon, použiteľnosť a technické SEO.",
 
   authors: [
     {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Samuel Zelíska | Tvorba webových stránok",
     description:
-      "Rýchle a profesionálne webové stránky pre živnostníkov, lokálne firmy a menšie spoločnosti.",
+      "Moderné webové stránky pre podnikateľov a firmy – od prvého návrhu až po spustenie.",
     url: siteUrl,
     siteName: "Samuel Zelíska",
     locale: "sk_SK",
@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Samuel Zelíska | Tvorba webových stránok",
     description:
-      "Rýchle a profesionálne webové stránky pre živnostníkov, lokálne firmy a menšie spoločnosti.",
+      "Moderné webové stránky pre podnikateľov a firmy – od prvého návrhu až po spustenie.",
     images: [
       {
         url: "/images/branding/opengraph-banner-v3.png",

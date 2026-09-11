@@ -1,20 +1,20 @@
 export const about = {
-  badge: "Niečo o mne",
+  badge: "O mne",
 
-  title: "Verím, že kvalitný web je investícia, nie len vizitka.",
+  title: "Web ako premyslený nástroj pre vaše podnikanie.",
 
   description: [
-    "Každý projekt začínam pochopením firmy, jej služieb a zákazníkov. Vďaka tomu nevzniká len pekný web, ale riešenie, ktoré podporuje ciele podnikania.",
+    "Som Samuel Zelíska a venujem sa návrhu a vývoju moderných webových stránok. Každý projekt začínam pochopením firmy, jej ponuky a ľudí, ktorých chce osloviť.",
 
-    "Navrhujem a vyvíjam webové stránky od prvého návrhu až po nasadenie. Dbám na čistý dizajn, vysoký výkon, SEO a jednoduché používanie na všetkých zariadeniach.",
+    "Od štruktúry a vizuálneho návrhu až po vývoj a nasadenie riešim web ako jeden celok. Výsledok má byť prehľadný, rýchly a jednoducho použiteľný na každom zariadení.",
 
-    "Verím v otvorenú komunikáciu, premyslené riešenia a kvalitne odvedenú prácu. Mojím cieľom je vytvoriť web, ktorý bude vašu firmu reprezentovať profesionálne aj o niekoľko rokov.",
+    "Zakladám si na priamej komunikácii, rozumných rozhodnutiach a poctivo odvedenej práci. Mojím cieľom je vytvoriť web, ktorý bude vašu firmu dôveryhodne reprezentovať aj dlhodobo.",
   ],
 
   values: [
     "Jasná komunikácia počas celého projektu",
-    "Riešenie prispôsobené vašej firme",
-    "Rýchly, spoľahlivý a kvalitný web",
-    "SEO a výkon od prvého návrhu",
+    "Riešenie prispôsobené vašim cieľom",
+    "Čistý dizajn a jednoduché používanie",
+    "Výkon a technické SEO od začiatku",
   ],
 };

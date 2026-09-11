@@ -48,14 +48,14 @@ export default function Hero() {
             href="#projekty"
             className="w-full sm:w-auto"
           >
-            Pozrieť práce
+            Pozrieť projekty
           </Button>
 
           <a
             href="#kontakt"
             className="inline-flex w-full items-center justify-center rounded-xl border border-white/25 bg-white/5 px-6 py-3 font-semibold text-white transition-all duration-300 hover:border-blue-400 hover:bg-white/10 hover:text-blue-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#03193E] sm:w-auto"
           >
-            Kontaktovať ma
+            Nezáväzne prebrať projekt
           </a>
         </div>
 
