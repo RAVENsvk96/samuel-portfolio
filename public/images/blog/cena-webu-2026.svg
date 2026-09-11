@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
+  <title id="title">Koľko stojí webová stránka pre firmu v roku 2026?</title>
+  <desc id="desc">Titulná grafika článku v modrom vizuálnom štýle značky Samuel Zelíska.</desc>
+  <rect width="1280" height="640" fill="#03193E"/>
+  <defs>
+    <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M64 0H0V64" fill="none" stroke="#60A5FA" stroke-opacity=".08"/>
+    </pattern>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#93C5FD"/>
+      <stop offset="1" stop-color="#2563EB"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="640" fill="url(#grid)"/>
+  <circle cx="1010" cy="320" r="244" fill="none" stroke="#60A5FA" stroke-opacity=".13"/>
+  <circle cx="1010" cy="320" r="174" fill="none" stroke="#60A5FA" stroke-opacity=".13"/>
+  <circle cx="1010" cy="320" r="104" fill="#2563EB" fill-opacity=".12"/>
+  <text x="176" y="120" fill="#60A5FA" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="7">PODNIKANIE • WEB</text>
+  <text x="176" y="232" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="62" font-weight="800">
+    <tspan x="176" dy="0">Koľko stojí webová</tspan>
+    <tspan x="176" dy="76">stránka pre firmu?</tspan>
+  </text>
+  <text x="176" y="442" fill="#CBD5E1" font-family="Arial, sans-serif" font-size="28">Cenové pásma, rozsah a skryté náklady</text>
+  <rect x="176" y="500" width="142" height="52" rx="12" fill="url(#accent)"/>
+  <text x="247" y="535" text-anchor="middle" fill="#03193E" font-family="Arial, sans-serif" font-size="24" font-weight="800">2026</text>
+  <text x="1010" y="355" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="104" font-weight="800">€</text>
+</svg>
