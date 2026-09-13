@@ -12,6 +12,7 @@ export const projects: Project[] = [
     result:
       "Responzívny web s galériou realizácií, štruktúrou služieb, prehľadom realizácií a služieb, jasnými výzvami k akcii, responzívnym zobrazením a optimalizovaným výkonom.",
     image: "/images/projects/konstrukt.png",
+    caseStudyUrl: "/blog/case-study-konstrukt",
     technologies: [
       "Next.js",
       "TypeScript",
@@ -32,6 +33,7 @@ export const projects: Project[] = [
     result:
       "Responzívne riešenie s prezentáciou služieb, prezentáciou služieb, galériou, jemnými animáciami, responzívnym zobrazením a dôrazom na použiteľnosť.",
     image: "/images/projects/bloom.png",
+    caseStudyUrl: "/blog/case-study-bloom-beauty",
     technologies: [
       "Next.js",
       "TypeScript",
@@ -52,6 +54,7 @@ export const projects: Project[] = [
     result:
       "Responzívny web s vlastným vizuálnym smerovaním, výraznou vizuálnou identitou, galériou, prehľadom služieb, responzívnym zobrazením a optimalizáciou výkonu.",
     image: "/images/projects/north.png",
+    caseStudyUrl: "/blog/case-study-north-barber",
     technologies: [
       "Next.js",
       "TypeScript",
@@ -72,6 +75,7 @@ export const projects: Project[] = [
     result:
       "Responzívny web s prehľadom služieb, prehľadom služieb, jasnou navigáciou, responzívnym zobrazením a optimalizovaným načítaním.",
     image: "/images/projects/autoservis.png",
+    caseStudyUrl: "/blog/case-study-autoservis",
     technologies: [
       "Next.js",
       "TypeScript",
@@ -92,6 +96,7 @@ export const projects: Project[] = [
     result:
       "Responzívne riešenie s pokojnou prezentáciou služieb, responzívnym zobrazením a dôrazom na výkon, prístupnosť a použiteľnosť.",
     image: "/images/projects/dental.png",
+    caseStudyUrl: "/blog/case-study-zubna-ambulancia",
     technologies: [
       "Next.js",
       "TypeScript",

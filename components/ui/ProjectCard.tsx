@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import Button from "@/components/ui/Button";
 import type { Project } from "@/types/project";
@@ -28,7 +29,11 @@ export default function ProjectCard({
         <div
           className={`p-4 pb-0 sm:p-6 sm:pb-0 lg:p-7 ${imageOrder}`}
         >
-          <div className="aspect-[16/10] overflow-hidden rounded-[1.25rem] border border-white/10 bg-[#03193E] shadow-2xl shadow-black/20">
+          <Link
+            href={project.caseStudyUrl}
+            aria-label={`Prečítať case study projektu ${project.title}`}
+            className="block aspect-[16/10] overflow-hidden rounded-[1.25rem] border border-white/10 bg-[#03193E] shadow-2xl shadow-black/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-4 focus-visible:ring-offset-[#04142F]"
+          >
             <Image
               src={project.image}
               alt={`Ukážka demo projektu ${project.title}`}
@@ -37,7 +42,7 @@ export default function ProjectCard({
               sizes="(min-width: 1024px) 52vw, 100vw"
               className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.025]"
             />
-          </div>
+          </Link>
         </div>
 
         <div
@@ -92,14 +97,19 @@ export default function ProjectCard({
             ))}
           </div>
 
-          <div className="mt-8">
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+            <Button href={project.caseStudyUrl}>
+              Pozrieť case study
+            </Button>
+
             <Button
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label={`Pozrieť demo projekt ${project.title} v novom okne`}
+              aria-label={`Pozrieť živý projekt ${project.title} v novom okne`}
+              variant="secondary"
             >
-              Pozrieť demo
+              Pozrieť živý web
             </Button>
           </div>
         </div>

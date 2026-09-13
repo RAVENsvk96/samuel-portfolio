@@ -13,6 +13,8 @@ export type Project = {
 
   technologies: string[];
 
+  caseStudyUrl: string;
+
   liveUrl: string;
 
   githubUrl?: string;
