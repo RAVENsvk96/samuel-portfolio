@@ -15,10 +15,11 @@ type MenuIconProps = {
 };
 
 const orbitPositions = [
-  "left-1/2 top-[4%] -translate-x-1/2",
-  "right-[2%] top-1/2 -translate-y-1/2",
-  "bottom-[4%] left-1/2 -translate-x-1/2",
-  "left-[2%] top-1/2 -translate-y-1/2",
+  "left-1/2 top-[3%] -translate-x-1/2",
+  "right-[5%] top-[29%]",
+  "bottom-[8%] right-[15%]",
+  "bottom-[8%] left-[15%]",
+  "left-[5%] top-[29%]",
 ];
 
 function MenuIcon({ label }: MenuIconProps) {
@@ -46,6 +47,15 @@ function MenuIcon({ label }: MenuIconProps) {
         <circle cx="18" cy="12" r="2" />
         <circle cx="6" cy="18" r="2" />
         <path d="M8 6h3a3 3 0 0 1 3 3v0a3 3 0 0 0 3 3M8 18h3a3 3 0 0 0 3-3" />
+      </svg>
+    );
+  }
+
+  if (label === "O mne") {
+    return (
+      <svg viewBox="0 0 24 24" className="size-6" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" aria-hidden="true">
+        <circle cx="12" cy="8" r="3.5" />
+        <path d="M5.5 20a6.5 6.5 0 0 1 13 0" />
       </svg>
     );
   }
@@ -263,7 +273,7 @@ export default function Navbar({ variant = "portfolio" }: NavbarProps) {
                 <Link
                   href={contactHref}
                   onClick={closeMenu}
-                  className="orbit-contact absolute bottom-[2%] right-[-7%] inline-flex items-center gap-3 rounded-full border border-blue-400/70 bg-[#072655]/95 py-2 pl-2 pr-5 font-semibold text-white shadow-[0_14px_40px_rgba(0,0,0,0.3)] transition duration-300 hover:-translate-y-0.5 hover:bg-blue-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-300"
+                  className="orbit-contact absolute bottom-[-12%] left-1/2 inline-flex items-center gap-3 rounded-full border border-blue-400/70 bg-[#072655]/95 py-2 pl-2 pr-5 font-semibold text-white shadow-[0_14px_40px_rgba(0,0,0,0.3)] transition duration-300 hover:-translate-y-0.5 hover:bg-blue-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-300"
                 >
                   <span className="inline-flex size-10 items-center justify-center rounded-full bg-blue-500">
                     <svg viewBox="0 0 24 24" className="size-5" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true">
@@ -290,7 +300,7 @@ export default function Navbar({ variant = "portfolio" }: NavbarProps) {
                 borderTopLeftRadius: "50% 14%",
                 borderTopRightRadius: "50% 14%",
               }}
-              className="mobile-arc relative -ml-[10vw] flex h-[64svh] min-h-[31rem] w-[120vw] flex-col overflow-hidden border-t border-blue-300/70 bg-[#061B3A]/98 shadow-[0_-28px_80px_rgba(0,0,0,0.45)]"
+              className="mobile-arc relative -ml-[10vw] flex h-[70svh] min-h-[35rem] w-[120vw] flex-col overflow-hidden border-t border-blue-300/70 bg-[#061B3A]/98 shadow-[0_-28px_80px_rgba(0,0,0,0.45)]"
             >
               <div className="absolute left-1/2 top-5 h-1 w-14 -translate-x-1/2 rounded-full bg-blue-200/80" aria-hidden="true" />
               <div className="absolute left-1/2 top-[-17vw] aspect-square w-[92vw] -translate-x-1/2 rounded-full border border-blue-400/10" aria-hidden="true" />
@@ -307,7 +317,9 @@ export default function Navbar({ variant = "portfolio" }: NavbarProps) {
                     href={item.href}
                     onClick={closeMenu}
                     style={{ animationDelay: `${90 + index * 55}ms` }}
-                    className="arc-item group flex flex-col items-center gap-2 rounded-2xl py-1 text-center font-semibold text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-300"
+                    className={`arc-item group flex flex-col items-center gap-2 rounded-2xl py-1 text-center font-semibold text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-300 ${
+                      index === primaryItems.length - 1 ? "col-span-2" : ""
+                    }`}
                   >
                     <span className="flex size-16 items-center justify-center rounded-full border border-blue-300/45 bg-[#072655]/70 text-white transition duration-300 group-active:scale-95 group-hover:border-blue-200 group-hover:bg-blue-500/15">
                       <MenuIcon label={item.label} />
@@ -352,8 +364,8 @@ export default function Navbar({ variant = "portfolio" }: NavbarProps) {
         }
 
         @keyframes orbit-contact {
-          from { opacity: 0; transform: translateX(24px); }
-          to { opacity: 1; transform: translateX(0); }
+          from { opacity: 0; transform: translate(-50%, 18px); }
+          to { opacity: 1; transform: translate(-50%, 0); }
         }
 
         @keyframes mobile-arc {

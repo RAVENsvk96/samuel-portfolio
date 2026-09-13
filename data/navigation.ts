@@ -19,4 +19,8 @@ export const navigation = [
     label: "Blog",
     href: "/blog",
   },
+  {
+    label: "O mne",
+    href: "#o-mne",
+  },
 ];
