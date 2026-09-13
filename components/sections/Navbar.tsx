@@ -70,6 +70,7 @@ function MenuIcon({ label }: MenuIconProps) {
 
 export default function Navbar({ variant = "portfolio" }: NavbarProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeLabel, setActiveLabel] = useState<string | null>(null);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
   const desktopMenuRef = useRef<HTMLDivElement>(null);
   const mobileMenuRef = useRef<HTMLDivElement>(null);
@@ -83,8 +84,49 @@ export default function Navbar({ variant = "portfolio" }: NavbarProps) {
     .map((item) => ({ ...item, href: resolveHref(item.href) }));
 
   const contactHref = isBlog ? "/#kontakt" : "#kontakt";
+  const currentLabel = isBlog ? "Blog" : activeLabel;
 
   const closeMenu = () => setIsMenuOpen(false);
+
+  useEffect(() => {
+    if (isBlog) return;
+
+    const sectionItems = navigation.filter((item) =>
+      item.href.startsWith("#"),
+    );
+    let frameId = 0;
+
+    const updateActiveSection = () => {
+      window.cancelAnimationFrame(frameId);
+      frameId = window.requestAnimationFrame(() => {
+        const marker = window.innerHeight * 0.38;
+        const activeSection = sectionItems.find((item) => {
+          const section = document.getElementById(item.href.slice(1));
+
+          if (!section) return false;
+
+          const bounds = section.getBoundingClientRect();
+          return bounds.top <= marker && bounds.bottom > marker;
+        });
+
+        setActiveLabel(
+          activeSection && activeSection.label !== "Kontakt"
+            ? activeSection.label
+            : null,
+        );
+      });
+    };
+
+    updateActiveSection();
+    window.addEventListener("scroll", updateActiveSection, { passive: true });
+    window.addEventListener("resize", updateActiveSection);
+
+    return () => {
+      window.cancelAnimationFrame(frameId);
+      window.removeEventListener("scroll", updateActiveSection);
+      window.removeEventListener("resize", updateActiveSection);
+    };
+  }, [isBlog]);
 
   useEffect(() => {
     if (!isMenuOpen) return;
@@ -247,9 +289,28 @@ export default function Navbar({ variant = "portfolio" }: NavbarProps) {
                     href={item.href}
                     onClick={closeMenu}
                     style={{ animationDelay: `${110 + index * 70}ms` }}
-                    className={`orbit-item absolute ${orbitPositions[index]} flex w-24 flex-col items-center gap-2 text-center text-sm font-semibold text-slate-100 transition hover:text-blue-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-300`}
+                    aria-current={
+                      currentLabel === item.label ? "location" : undefined
+                    }
+                    className={`orbit-item group absolute ${orbitPositions[index]} flex w-24 flex-col items-center gap-2 text-center text-sm font-semibold transition focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-300 ${
+                      currentLabel === item.label
+                        ? "text-blue-200"
+                        : "text-slate-100 hover:text-blue-300"
+                    }`}
                   >
-                    <span className="flex size-[4.5rem] items-center justify-center rounded-full border border-blue-200/60 bg-[#061B3A]/95 text-white shadow-[0_0_24px_rgba(59,130,246,0.12)] transition duration-300 group-hover:border-blue-300">
+                    <span
+                      className={`relative flex size-[4.5rem] items-center justify-center rounded-full border bg-[#061B3A]/95 text-white transition duration-300 ${
+                        currentLabel === item.label
+                          ? "border-blue-200 bg-blue-500/20 shadow-[0_0_34px_rgba(96,165,250,0.35)]"
+                          : "border-blue-200/60 shadow-[0_0_24px_rgba(59,130,246,0.12)] group-hover:border-blue-300"
+                      }`}
+                    >
+                      {currentLabel === item.label && (
+                        <span
+                          className="absolute -right-0.5 top-1 size-2 rounded-full bg-blue-200 shadow-[0_0_10px_rgba(147,197,253,1)]"
+                          aria-hidden="true"
+                        />
+                      )}
                       <MenuIcon label={item.label} />
                     </span>
                     <span>{item.label}</span>
@@ -317,11 +378,30 @@ export default function Navbar({ variant = "portfolio" }: NavbarProps) {
                     href={item.href}
                     onClick={closeMenu}
                     style={{ animationDelay: `${90 + index * 55}ms` }}
-                    className={`arc-item group flex flex-col items-center gap-2 rounded-2xl py-1 text-center font-semibold text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-300 ${
+                    aria-current={
+                      currentLabel === item.label ? "location" : undefined
+                    }
+                    className={`arc-item group flex flex-col items-center gap-2 rounded-2xl py-1 text-center font-semibold focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-300 ${
                       index === primaryItems.length - 1 ? "col-span-2" : ""
+                    } ${
+                      currentLabel === item.label
+                        ? "text-blue-200"
+                        : "text-white"
                     }`}
                   >
-                    <span className="flex size-16 items-center justify-center rounded-full border border-blue-300/45 bg-[#072655]/70 text-white transition duration-300 group-active:scale-95 group-hover:border-blue-200 group-hover:bg-blue-500/15">
+                    <span
+                      className={`relative flex size-16 items-center justify-center rounded-full border bg-[#072655]/70 text-white transition duration-300 group-active:scale-95 ${
+                        currentLabel === item.label
+                          ? "border-blue-200 bg-blue-500/20 shadow-[0_0_28px_rgba(96,165,250,0.32)]"
+                          : "border-blue-300/45 group-hover:border-blue-200 group-hover:bg-blue-500/15"
+                      }`}
+                    >
+                      {currentLabel === item.label && (
+                        <span
+                          className="absolute -right-0.5 top-1 size-2 rounded-full bg-blue-200 shadow-[0_0_10px_rgba(147,197,253,1)]"
+                          aria-hidden="true"
+                        />
+                      )}
                       <MenuIcon label={item.label} />
                     </span>
                     <span>{item.label}</span>
