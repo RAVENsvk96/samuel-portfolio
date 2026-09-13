@@ -1,5 +1,5 @@
 import Section from "@/components/layout/Section";
-import Button from "@/components/ui/Button";
+import ContactForm from "@/components/sections/ContactForm";
 import { profile } from "@/data/profile";
 
 export default function Contact() {
@@ -19,21 +19,17 @@ export default function Contact() {
           Ozvem sa vám a nezáväzne prejdeme najvhodnejší ďalší postup.
         </p>
 
-        <div className="mt-10 flex flex-col items-center justify-center gap-5">
-          <Button href={`mailto:${profile.email}`}>
-            Nezáväzne prebrať projekt
-          </Button>
+        <ContactForm />
 
-          <p className="text-sm text-slate-400">
-            Alebo napíšte priamo na{" "}
-            <a
-              href={`mailto:${profile.email}`}
-              className="font-semibold text-slate-200 underline decoration-slate-500 underline-offset-4 transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-4 focus-visible:ring-offset-[#03193E]"
-            >
-              {profile.email}
-            </a>
-          </p>
-        </div>
+        <p className="mt-6 text-sm text-slate-400">
+          Uprednostňujete e-mail? Napíšte priamo na{" "}
+          <a
+            href={`mailto:${profile.email}`}
+            className="font-semibold text-slate-200 underline decoration-slate-500 underline-offset-4 transition-colors hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-4 focus-visible:ring-offset-[#03193E]"
+          >
+            {profile.email}
+          </a>
+        </p>
       </div>
     </Section>
   );
