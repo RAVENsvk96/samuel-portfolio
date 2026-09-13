@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
+  <title id="title">Case study webu Bloom Beauty Studio</title>
+  <desc id="desc">Tmavomodrá titulná grafika s ružovým kvetinovým symbolom a názvom Bloom Beauty Studio.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#061B3A"/>
+      <stop offset="1" stop-color="#03193E"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F9A8D4"/>
+      <stop offset="1" stop-color="#C084FC"/>
+    </linearGradient>
+    <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M64 0H0V64" fill="none" stroke="#60A5FA" stroke-opacity=".07"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="640" rx="36" fill="url(#bg)"/>
+  <rect width="1280" height="640" rx="36" fill="url(#grid)"/>
+  <circle cx="1010" cy="320" r="220" fill="none" stroke="#60A5FA" stroke-opacity=".10"/>
+  <circle cx="1010" cy="320" r="150" fill="none" stroke="#60A5FA" stroke-opacity=".10"/>
+  <text x="176" y="150" fill="#60A5FA" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="8">CASE STUDY · BEAUTY</text>
+  <text x="176" y="265" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="66" font-weight="800">Bloom Beauty</text>
+  <text x="176" y="345" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="42" font-weight="700">Jemný vizuál, jasná rezervácia</text>
+  <text x="176" y="420" fill="#CBD5E1" font-family="Arial, sans-serif" font-size="24">Od výberu služby po rezerváciu termínu</text>
+  <rect x="176" y="476" width="196" height="50" rx="12" fill="#F9A8D4"/>
+  <text x="274" y="509" text-anchor="middle" fill="#03193E" font-family="Arial, sans-serif" font-size="20" font-weight="800">DEMO PROJEKT</text>
+  <g transform="translate(866 178)" fill="none" stroke="url(#accent)" stroke-width="15" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M144 138c-48-6-74-35-72-72 38-2 67 24 72 72Z"/>
+    <path d="M144 138c6-48 35-74 72-72 2 38-24 67-72 72Z"/>
+    <path d="M144 138c48 6 74 35 72 72-38 2-67-24-72-72Z"/>
+    <path d="M144 138c-6 48-35 74-72 72-2-38 24-67 72-72Z"/>
+    <circle cx="144" cy="138" r="27" fill="#061B3A"/>
+    <path d="M144 165v96M112 261h64" stroke="#F9A8D4"/>
+  </g>
+</svg>
