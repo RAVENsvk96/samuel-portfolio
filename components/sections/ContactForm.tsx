@@ -2,6 +2,8 @@
 
 import { useState, type FormEvent } from "react";
 
+import { trackContactSubmit } from "@/lib/analytics";
+
 type FormStatus = "idle" | "submitting" | "success" | "error";
 
 export default function ContactForm() {
@@ -31,6 +33,7 @@ export default function ContactForm() {
         throw new Error(data.message || "Správu sa nepodarilo odoslať.");
       }
 
+      trackContactSubmit();
       form.reset();
       setStatus("success");
     } catch (error) {

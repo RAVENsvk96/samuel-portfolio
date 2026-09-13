@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
+
+import { trackCtaClick } from "@/lib/analytics";
 import { useEffect, useRef, useState } from "react";
 
 import { navigation } from "@/data/navigation";
@@ -333,7 +335,10 @@ export default function Navbar({ variant = "portfolio" }: NavbarProps) {
 
                 <Link
                   href={contactHref}
-                  onClick={closeMenu}
+                  onClick={() => {
+                    trackCtaClick("navigation_desktop");
+                    closeMenu();
+                  }}
                   className="orbit-contact absolute bottom-[-12%] left-1/2 inline-flex items-center gap-3 rounded-full border border-blue-400/70 bg-[#072655]/95 py-2 pl-2 pr-5 font-semibold text-white shadow-[0_14px_40px_rgba(0,0,0,0.3)] transition duration-300 hover:-translate-y-0.5 hover:bg-blue-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-300"
                 >
                   <span className="inline-flex size-10 items-center justify-center rounded-full bg-blue-500">
@@ -411,7 +416,10 @@ export default function Navbar({ variant = "portfolio" }: NavbarProps) {
 
               <Link
                 href={contactHref}
-                onClick={closeMenu}
+                onClick={() => {
+                  trackCtaClick("navigation_mobile");
+                  closeMenu();
+                }}
                 className="arc-contact mt-auto inline-flex w-full items-center justify-center gap-3 rounded-full bg-blue-600 px-6 py-4 font-semibold text-white shadow-[0_16px_40px_rgba(37,99,235,0.3)] transition active:scale-[0.98] hover:bg-blue-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-200 focus-visible:ring-offset-3 focus-visible:ring-offset-[#061B3A]"
               >
                 <svg viewBox="0 0 24 24" className="size-5" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true">

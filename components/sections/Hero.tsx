@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+import TrackedLink from "@/components/analytics/TrackedLink";
 import Button from "@/components/ui/Button";
 import { profile } from "@/data/profile";
 
@@ -51,12 +52,13 @@ export default function Hero() {
             Pozrieť projekty
           </Button>
 
-          <a
+          <TrackedLink
             href="#kontakt"
+            analyticsLocation="hero"
             className="inline-flex w-full items-center justify-center rounded-xl border border-white/25 bg-white/5 px-6 py-3 font-semibold text-white transition-all duration-300 hover:border-blue-400 hover:bg-white/10 hover:text-blue-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#03193E] sm:w-auto"
           >
             Nezáväzne prebrať projekt
-          </a>
+          </TrackedLink>
         </div>
 
         <div className="mt-10 hidden flex-wrap justify-center gap-3 md:flex">
