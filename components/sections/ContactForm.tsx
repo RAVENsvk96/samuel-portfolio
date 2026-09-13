@@ -119,6 +119,17 @@ export default function ContactForm() {
         </p>
       </div>
 
+      <p className="mt-5 text-xs leading-5 text-slate-500">
+        Odoslaním formulára beriete na vedomie{" "}
+        <a
+          href="/ochrana-osobnych-udajov"
+          className="font-medium text-slate-300 underline decoration-slate-600 underline-offset-4 transition hover:text-white"
+        >
+          informácie o spracúvaní osobných údajov
+        </a>
+        .
+      </p>
+
       <div aria-live="polite" className="mt-4 min-h-6 text-sm">
         {status === "success" && (
           <p className="font-medium text-emerald-400">

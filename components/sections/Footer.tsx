@@ -1,5 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 
+import CookieSettingsButton from "@/components/consent/CookieSettingsButton";
 import { profile } from "@/data/profile";
 
 export default function Footer() {
@@ -9,9 +11,9 @@ export default function Footer() {
     <footer className="border-t border-white/10 bg-[#03193E] text-white">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-8 px-6 py-10 text-center md:flex-row md:justify-between md:text-left">
         <div className="flex flex-col items-center gap-3 md:items-start">
-          <a
-            href="#"
-            aria-label="Prejsť na začiatok stránky"
+          <Link
+            href="/"
+            aria-label="Prejsť na domovskú stránku"
             className="flex items-center rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-4 focus-visible:ring-offset-[#03193E]"
           >
             <Image
@@ -21,7 +23,7 @@ export default function Footer() {
               height={100}
               className="h-12 w-auto object-contain"
             />
-          </a>
+          </Link>
 
           <p className="text-sm text-slate-400">
             © {currentYear} {profile.name}. Všetky práva vyhradené.
@@ -47,8 +49,21 @@ export default function Footer() {
                 href={`mailto:${profile.email}`}
                 className="rounded-sm text-slate-400 transition-colors hover:text-blue-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-4 focus-visible:ring-offset-[#03193E]"
               >
-                Email
+                E-mail
               </a>
+            </li>
+
+            <li>
+              <Link
+                href="/ochrana-osobnych-udajov"
+                className="rounded-sm text-slate-400 transition-colors hover:text-blue-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-4 focus-visible:ring-offset-[#03193E]"
+              >
+                Ochrana osobných údajov
+              </Link>
+            </li>
+
+            <li>
+              <CookieSettingsButton />
             </li>
           </ul>
         </nav>

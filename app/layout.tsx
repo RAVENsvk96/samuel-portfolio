@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 
+import CookieConsent from "@/components/consent/CookieConsent";
 import ScrollToTop from "@/components/ui/ScrollToTop";
 
 import "./globals.css";
@@ -103,6 +104,7 @@ export default function RootLayout({
       <body className="min-h-full bg-white font-sans text-slate-950 selection:bg-blue-400 selection:text-[#03193E]">
         {children}
         <ScrollToTop />
+        <CookieConsent />
       </body>
     </html>
   );
