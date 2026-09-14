@@ -1,5 +1,6 @@
 export type CtaLocation =
   | "hero"
+  | "offer"
   | "navigation_desktop"
   | "navigation_mobile";
 
