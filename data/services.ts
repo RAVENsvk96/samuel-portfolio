@@ -5,7 +5,7 @@ export const services = [
       "Kompletné prezentačné weby pre podnikateľov a firmy. Zrozumiteľne predstavia vašu ponuku, posilnia dôveryhodnosť značky a uľahčia návštevníkom ďalší krok.",
   },
   {
-    title: "Landing pages",
+    title: "Jednostránkové weby",
     description:
       "Jednostránkové weby pre konkrétnu službu, ponuku alebo kampaň. Obsah a štruktúra smerujú návštevníka k jasnej akcii, napríklad ku kontaktu alebo objednávke.",
   },
