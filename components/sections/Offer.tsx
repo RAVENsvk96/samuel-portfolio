@@ -66,10 +66,10 @@ export default function Offer() {
             return (
               <article
                 key={offer.name}
-                className={`relative flex flex-col rounded-3xl border p-6 sm:p-8 ${
+                className={`group relative flex flex-col rounded-3xl border p-6 transition-all duration-300 hover:-translate-y-1 sm:p-8 ${
                   featured
-                    ? "border-blue-400/60 bg-[linear-gradient(160deg,rgba(20,66,137,0.72),rgba(8,34,76,0.96))] shadow-[0_24px_70px_rgba(37,99,235,0.18)]"
-                    : "border-white/10 bg-white/[0.04]"
+                    ? "border-blue-400/60 bg-[linear-gradient(160deg,rgba(20,66,137,0.72),rgba(8,34,76,0.96))] shadow-[0_24px_70px_rgba(37,99,235,0.18)] hover:border-blue-300/80 hover:shadow-[0_28px_85px_rgba(37,99,235,0.3)]"
+                    : "border-white/10 bg-white/[0.04] hover:border-blue-400/35 hover:bg-white/[0.06] hover:shadow-[0_24px_70px_rgba(37,99,235,0.16)]"
                 }`}
               >
                 <h3 className="text-xl font-semibold text-white sm:text-2xl">{offer.name}</h3>
