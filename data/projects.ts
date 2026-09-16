@@ -48,11 +48,11 @@ export const projects: Project[] = [
     category: "Barber",
     year: "2026",
     description:
-      "Ukážkový koncept webu pre barber štúdio postavený na výraznej vizuálnej identite a minimalistickom rozhraní.",
+      "Prémiový prezentačný web pre barber štúdio s editorial typografiou, výrazným obrazovým hero a atmosférou prispôsobenou značke.",
     goal:
-      "Navrhnúť web, ktorý jasne komunikuje charakter značky, predstaví služby a nasmeruje návštevníka k rezervácii.",
+      "Odlíšiť štúdio od bežných šablón, prehľadne predstaviť služby a preniesť charakter prevádzky do online prezentácie.",
     result:
-      "Responzívny web s vlastným vizuálnym smerovaním, výraznou vizuálnou identitou, galériou, prehľadom služieb, responzívnym zobrazením a optimalizáciou výkonu.",
+      "Responzívny koncept s individuálnym layoutom, mobilnou navigáciou, prehľadom služieb, galériou a jemnými animáciami optimalizovanými pre výkon.",
     image: "/images/projects/north.png",
     caseStudyUrl: "/blog/case-study-north-barber",
     technologies: [
