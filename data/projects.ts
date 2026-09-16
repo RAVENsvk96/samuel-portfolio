@@ -53,7 +53,7 @@ export const projects: Project[] = [
       "Odlíšiť štúdio od bežných šablón, prehľadne predstaviť služby a preniesť charakter prevádzky do online prezentácie.",
     result:
       "Responzívny koncept s individuálnym layoutom, mobilnou navigáciou, prehľadom služieb, galériou a jemnými animáciami optimalizovanými pre výkon.",
-    image: "/images/projects/north.png",
+    image: "/images/projects/north-v2.png",
     caseStudyUrl: "/blog/case-study-north-barber",
     technologies: [
       "Next.js",
