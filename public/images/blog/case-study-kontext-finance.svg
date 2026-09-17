@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
+  <title id="title">Case study webu KONTEXT Finance</title>
+  <desc id="desc">Tmavomodrá titulná grafika s dekoratívnym motívom finančných súvislostí a názvom projektu KONTEXT Finance.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#061B3A"/>
+      <stop offset="1" stop-color="#03193E"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#AEBB82"/>
+      <stop offset="1" stop-color="#C4AE82"/>
+    </linearGradient>
+    <pattern id="grid" width="64" height="64" patternUnits="userSpaceOnUse">
+      <path d="M64 0H0V64" fill="none" stroke="#60A5FA" stroke-opacity=".07"/>
+    </pattern>
+  </defs>
+
+  <rect width="1280" height="640" rx="36" fill="url(#bg)"/>
+  <rect width="1280" height="640" rx="36" fill="url(#grid)"/>
+
+  <circle cx="1010" cy="320" r="220" fill="none" stroke="#60A5FA" stroke-opacity=".10"/>
+  <circle cx="1010" cy="320" r="150" fill="none" stroke="#60A5FA" stroke-opacity=".10"/>
+
+  <text x="176" y="150" fill="#60A5FA" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="8">CASE STUDY · FINANCIE</text>
+  <text x="176" y="265" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="66" font-weight="800">KONTEXT Finance</text>
+  <text x="176" y="345" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="42" font-weight="700">Jasnosť namiesto tlaku</text>
+  <text x="176" y="420" fill="#CBD5E1" font-family="Arial, sans-serif" font-size="24">Od finančných otázok k zrozumiteľnému plánu</text>
+
+  <rect x="176" y="476" width="196" height="50" rx="12" fill="#AEBB82"/>
+  <text x="274" y="509" text-anchor="middle" fill="#03193E" font-family="Arial, sans-serif" font-size="20" font-weight="800">DEMO PROJEKT</text>
+
+  <!-- Dekoratívny motív súvislostí: nie logo značky -->
+  <g transform="translate(850 195)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M46 198 126 112 196 158 262 72" stroke="url(#accent)" stroke-width="16"/>
+    <circle cx="46" cy="198" r="18" fill="#061B3A" stroke="#C4AE82" stroke-width="12"/>
+    <circle cx="126" cy="112" r="18" fill="#061B3A" stroke="#AEBB82" stroke-width="12"/>
+    <circle cx="196" cy="158" r="18" fill="#061B3A" stroke="#C4AE82" stroke-width="12"/>
+    <circle cx="262" cy="72" r="18" fill="#061B3A" stroke="#AEBB82" stroke-width="12"/>
+    <path d="M52 244h204" stroke="#AEBB82" stroke-opacity=".55" stroke-width="10"/>
+  </g>
+</svg>

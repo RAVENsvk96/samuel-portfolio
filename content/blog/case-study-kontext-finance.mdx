@@ -1,0 +1,131 @@
+---
+title: "Case study: KONTEXT Finance"
+description: "Ako vznikol ukážkový web pre finančnú konzultantku – od obsahovej stratégie cez editorial dizajn až po pohyblivé ambientné pozadie a responzívne spracovanie."
+publishedAt: "2026-09-17"
+category: "Case Studies"
+tags:
+  - "Financie"
+  - "Osobná značka"
+  - "Web dizajn"
+coverImage: "/images/blog/case-study-kontext-finance.svg"
+featured: false
+---
+
+KONTEXT Finance je autorský demo koncept webovej stránky pre finančnú konzultantku. Nejde o skutočnú finančnú spoločnosť ani klientsku realizáciu. Projekt vznikol ako ukážka toho, ako môže web finančného poradcu pôsobiť profesionálne, dôveryhodne a zároveň sa vizuálne odlíšiť od bežných korporátnych šablón.
+
+Hlavnou myšlienkou bolo postaviť komunikáciu na kontexte. Nie na množstve produktov, agresívnych výzvach k akcii alebo sľuboch, ale na pokojnom vysvetlení procesu a finančných súvislostí.
+
+## Zadanie a hlavný cieľ
+
+Finančné služby pracujú s témami, pri ktorých je dôvera mimoriadne dôležitá. Web preto musí návštevníkovi rýchlo odpovedať na niekoľko otázok:
+
+- Akým spôsobom poradca pracuje?
+- Budem rozumieť tomu, čo mi vysvetľuje?
+- Je jeho prístup založený na mojej situácii alebo na konkrétnom produkte?
+- Aké oblasti financií dokáže riešiť?
+- Čo sa bude diať po prvom kontakte?
+
+Cieľom konceptu bolo vytvoriť prezentáciu, ktorá tieto otázky rieši prirodzene počas prechádzania stránkou a zároveň pôsobí ako osobná značka, nie ako anonymný finančný portál.
+
+## Odklon od klasickej finančnej šablóny
+
+Prvá verzia návrhu používala pomerne tradičné rozloženie: veľký nadpis na jednej strane a portrét na druhej. Funkčne bolo správne, ale vizuálne bolo príliš podobné iným prezentačným webom.
+
+Preto som hero sekciu prepracoval od základu.
+
+Finálna verzia používa veľký editorial headline, samostatný textový blok a široký obrazový formát pod ním. Fotografia tak nie je iba druhým stĺpcom vedľa textu, ale stáva sa samostatným vizuálnym momentom stránky.
+
+Výsledkom je kompozícia, ktorá pôsobí pokojnejšie a zároveň má vlastnú identitu.
+
+## Typografia ako súčasť značky
+
+Pri návrhu som sa zámerne vyhol kombinácii, ktorá by pôsobila príliš luxusne alebo pripomínala beauty segment.
+
+Základ komunikácie preto tvorí moderný sans-serif. Serifové písmo zostáva iba ako jemný akcent vo vybraných častiach nadpisov.
+
+Takýto pomer pomáha zachovať osobný charakter značky bez toho, aby stránka stratila presnosť a profesionalitu, ktoré finančný segment potrebuje.
+
+## Pohyblivé ambientné pozadie
+
+Jedným z najvýraznejších prvkov projektu je pozadie.
+
+Namiesto čisto bielej plochy som použil tlmený sage základ doplnený veľmi pomaly sa pohybujúcimi rozostrenými svetelnými plochami v olivových a champagne tónoch.
+
+Pohyb je zámerne nenápadný. Nemá odvádzať pozornosť od obsahu. Jeho úlohou je dodať stránke hĺbku a pocit, že vizuál nie je úplne statický.
+
+Animácia je vytvorená bez videa a rešpektuje systémovú preferenciu `prefers-reduced-motion`, takže používateľ, ktorý má pohyb obmedzený, dostane statickú verziu pozadia.
+
+## Obsah postavený na rozhodovaní klienta
+
+Štruktúra stránky nevznikla iba ako zoznam služieb.
+
+Úvod vysvetľuje základnú myšlienku značky. Nasledujú oblasti financií, princípy spolupráce a jednoduchý proces.
+
+Obsah je zoradený tak, aby návštevník postupne pochopil:
+
+1. čo značka predstavuje,
+2. s akými témami môže pomôcť,
+3. ako pristupuje k rozhodovaniu,
+4. ako vyzerá spolupráca,
+5. aký je ďalší krok.
+
+Takáto hierarchia je vhodnejšia než okamžite zobrazovať množstvo finančných produktov bez kontextu.
+
+## Dôvera bez fiktívnych výsledkov
+
+Keďže ide o demo projekt, zámerne som nepoužil vymyslené referencie, počty klientov, výnosy ani tvrdenia o výsledkoch.
+
+Namiesto toho web buduje dôveru cez spôsob komunikácie, štruktúru, vizuálnu konzistentnosť a zrozumiteľné vysvetlenie procesu.
+
+Stránka je zároveň jasne označená ako ukážkový projekt, takže návštevník nemôže nadobudnúť dojem, že ide o reálnu finančnú službu.
+
+## Responzívny návrh
+
+Desktopová kompozícia pracuje s veľkým priestorom a širokou fotografiou, ale mobilná verzia nie je iba jej zmenšenou kópiou.
+
+Na menších obrazovkách sa mení:
+
+- veľkosť a rytmus hlavného nadpisu,
+- poradie a šírka textových blokov,
+- pomer strán fotografie,
+- množstvo priestoru medzi sekciami,
+- intenzita a veľkosť ambientného pozadia.
+
+Cieľom bolo zachovať charakter návrhu aj na telefóne bez toho, aby používateľ musel bojovať s veľkou desktopovou typografiou alebo nevhodne orezanými fotografiami.
+
+## Animácie a pohyb
+
+Obsahové prvky sa pri scrollovaní objavujú jemným pohybom a zmenou opacity.
+
+Na animácie používam Framer Motion spolu s kontrolou `useReducedMotion`. Animácia preto nie je podmienkou na pochopenie obsahu a pri požiadavke na obmedzený pohyb sa vypne.
+
+Rovnaký princíp som použil aj pri ambientnom pozadí.
+
+## Technické spracovanie
+
+Projekt je vytvorený pomocou Next.js, TypeScriptu, vlastného CSS a Framer Motion.
+
+Súčasťou produkčnej verzie je:
+
+- responzívne spracovanie,
+- optimalizované obrázky cez Next.js,
+- metadata pre sociálne siete,
+- sitemap,
+- robots konfigurácia,
+- základné technické SEO,
+- rešpektovanie `prefers-reduced-motion`,
+- staticky generovaná hlavná stránka.
+
+Pred nasadením prešiel projekt lint kontrolou aj produkčným buildom.
+
+## Čo tento projekt ukazuje
+
+KONTEXT Finance pre mňa nie je ukážkou jedného konkrétneho vizuálneho štýlu.
+
+Ukazuje najmä to, že web pre konkrétnu profesiu nemusí vzniknúť výmenou farieb a fotografií v rovnakej šablóne.
+
+Vizuálny jazyk, typografia, kompozícia aj pohyb boli prispôsobené tomu, čo má značka komunikovať: pokoj, jasnosť, dôveru a schopnosť vidieť financie v širších súvislostiach.
+
+[Pozrieť ukážkový projekt KONTEXT Finance](https://kontext-finance-demo.vercel.app).
+
+Potrebujete web, ktorý nebude pôsobiť ako ďalšia šablóna? [Napíšte mi a nezáväzne prejdeme váš projekt](/#kontakt).

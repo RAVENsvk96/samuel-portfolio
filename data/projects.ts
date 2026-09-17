@@ -2,6 +2,27 @@ import type { Project } from "@/types/project";
 
 export const projects: Project[] = [
   {
+    title: "KONTEXT Finance",
+    category: "Financie",
+    year: "2026",
+    description:
+      "Ukážkový koncept osobnej značky finančnej konzultantky s editorial dizajnom, pokojnou komunikáciou a dôrazom na finančné súvislosti.",
+    goal:
+      "Vytvoriť dôveryhodnú a vizuálne odlišnú prezentáciu finančných služieb bez typického korporátneho alebo šablónového vzhľadu.",
+    result:
+      "Responzívny web s individuálnou editorial kompozíciou, ambientným pohyblivým pozadím, jasnou obsahovou hierarchiou a jemnými animáciami.",
+    image: "/images/projects/kontext-finance.png",
+    caseStudyUrl: "/blog/case-study-kontext-finance",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "CSS",
+      "Framer Motion",
+      "SEO",
+    ],
+    liveUrl: "https://kontext-finance-demo.vercel.app",
+  },
+  {
     title: "Konstrukt",
     category: "Stavebníctvo",
     year: "2026",
