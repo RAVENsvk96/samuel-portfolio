@@ -27,12 +27,12 @@ export const projects: Project[] = [
     category: "Beauty",
     year: "2026",
     description:
-      "Ukážkový koncept webu pre beauty štúdio s jemnou vizuálnou identitou a dôrazom na prezentáciu služieb.",
+      "Ukážkový koncept webu pre beauty štúdio s výrazným editorial rozložením, organickou typografiou a prémiovou atmosférou.",
     goal:
-      "Vytvoriť pokojne a prémiovo pôsobiaci web, ktorý návštevníčke uľahčí výber služby a rezerváciu termínu.",
+      "Odlíšiť beauty značku od bežných šablón a prehľadne predstaviť služby bez fiktívnych rezervácií alebo recenzií.",
     result:
-      "Responzívne riešenie s prezentáciou služieb, prezentáciou služieb, galériou, jemnými animáciami, responzívnym zobrazením a dôrazom na použiteľnosť.",
-    image: "/images/projects/bloom.png",
+      "Responzívny koncept s asymetrickým hero, editorial cenníkom, obrazovou galériou, vlastnou mobilnou kompozíciou a jemnými animáciami.",
+    image: "/images/projects/bloom-v2.png",
     caseStudyUrl: "/blog/case-study-bloom-beauty",
     technologies: [
       "Next.js",
