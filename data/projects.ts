@@ -90,11 +90,11 @@ export const projects: Project[] = [
     category: "Automotive",
     year: "2026",
     description:
-      "Ukážkový koncept firemného webu pre lokálny autoservis so zameraním na dôveru a jednoduché objednanie servisu.",
+      "Výrazný tmavý koncept webu pre autoservis s technickou typografiou, prémiovým obrazovým hero a červenými akcentmi.",
     goal:
-      "Vytvoriť prehľadnú online prezentáciu, v ktorej zákazník rýchlo nájde služby, kontaktné údaje a možnosti objednania.",
+      "Odlíšiť autoservis od bežných šablón, jasne predstaviť služby a vybudovať profesionálny dojem už počas prvých sekúnd.",
     result:
-      "Responzívny web s prehľadom služieb, prehľadom služieb, jasnou navigáciou, responzívnym zobrazením a optimalizovaným načítaním.",
+      "Responzívny web s individuálnym layoutom, výraznou vizuálnou hierarchiou, prehľadom služieb, mobilnou navigáciou a optimalizovaným načítaním.",
     image: "/images/projects/autoservis.png",
     caseStudyUrl: "/blog/case-study-autoservis",
     technologies: [
