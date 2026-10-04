@@ -27,11 +27,11 @@ export const projects: Project[] = [
     category: "Stavebníctvo",
     year: "2026",
     description:
-      "Ukážkový koncept firemného webu pre stavebnú spoločnosť so zameraním na dôveryhodnú prezentáciu služieb a realizácií.",
+      "Ukážkový firemný web pre stavebnú spoločnosť s výraznou prezentáciou projektov a klikateľnými detailmi.",
     goal:
-      "Navrhnúť prehľadnú online prezentáciu, ktorá návštevníkovi rýchlo predstaví skúsenosti firmy a nasmeruje ho k nezáväznému dopytu.",
+      "Predstaviť ukážkové projekty hneď po úvode a vytvoriť jasnú cestu od vizuálnej ukážky cez služby k informáciám o spolupráci.",
     result:
-      "Responzívny web s galériou realizácií, štruktúrou služieb, prehľadom realizácií a služieb, jasnými výzvami k akcii, responzívnym zobrazením a optimalizovaným výkonom.",
+      "Responzívny web s asymetrickou galériou, detailmi projektov a prepínaním medzi nimi. Upravené poradie sekcií zachováva pôvodnú vizuálnu identitu a zvýrazňuje obrazový obsah.",
     image: "/images/projects/konstrukt.png",
     caseStudyUrl: "/blog/case-study-konstrukt",
     technologies: [
