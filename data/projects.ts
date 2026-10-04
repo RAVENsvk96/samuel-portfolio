@@ -111,11 +111,11 @@ export const projects: Project[] = [
     category: "Zdravotníctvo",
     year: "2026",
     description:
-      "Ukážkový koncept webu pre zubnú ambulanciu s dôrazom na dôveru, pokojné vizuálne spracovanie a dostupnosť informácií.",
+      "Demo web zubnej ambulancie so sýtejšou modrou paletou, prehľadnými službami a jemnými interakciami.",
     goal:
-      "Navrhnúť web, ktorý pacientovi zrozumiteľne predstaví služby ambulancie a uľahčí mu kontakt alebo objednanie.",
+      "Zrozumiteľne predstaviť služby a doladiť vizuálny dojem pri zachovaní pôvodného loga a rozloženia.",
     result:
-      "Responzívne riešenie s pokojnou prezentáciou služieb, responzívnym zobrazením a dôrazom na výkon, prístupnosť a použiteľnosť.",
+      "Responzívny demo web s upravenou paletou, jemným presvetlením pozadia, interakciami a podporou obmedzeného pohybu.",
     image: "/images/projects/dental.png",
     caseStudyUrl: "/blog/case-study-zubna-ambulancia",
     technologies: [
